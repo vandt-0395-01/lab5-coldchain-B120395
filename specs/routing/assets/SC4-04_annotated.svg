@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1483" viewBox="0 0 1440 1483" font-family="Helvetica Neue, Hiragino Sans, Arial, sans-serif">
+<rect width="1440" height="1483" fill="#f5f7fa"/>
+<rect x="0" y="0" width="232" height="1483" fill="#323f4b"/>
+<text x="20" y="34" font-size="14" font-weight="700" fill="#ffffff">Kho lạnh 3 dải nhiệt</text>
+<text x="20" y="52" font-size="11" fill="#7b8794">三温度帯 · Product B</text>
+<text x="22" y="88" font-size="12.5" fill="#e4e7eb">Dashboard</text>
+<text x="22" y="122" font-size="12.5" fill="#e4e7eb">Tồn kho</text>
+<text x="22" y="156" font-size="12.5" fill="#e4e7eb">Đơn xuất (出荷指示)</text>
+<rect x="10" y="170" width="212" height="30" rx="5" fill="#2b6cb0"/>
+<text x="22" y="190" font-size="12.5" fill="#ffffff">Lập tuyến (配送計画)</text>
+<text x="22" y="224" font-size="12.5" fill="#e4e7eb">Lịch sử giao</text>
+<text x="22" y="258" font-size="12.5" fill="#e4e7eb">Truy xuất</text>
+<rect x="232" y="0" width="1208" height="60" fill="#ffffff"/>
+<line x1="232" y1="60" x2="1440" y2="60" stroke="#cbd2d9"/>
+<text x="1412" y="30" font-size="13" font-weight="600" fill="#1f2933" text-anchor="end">Phạm Điều Phối</text>
+<text x="1412" y="47" font-size="11.5" fill="#7b8794" text-anchor="end">Điều phối</text>
+<text x="260" y="92" font-size="21" font-weight="700" fill="#1f2933">Lập tuyến giao (配送計画)</text>
+<text x="260" y="118" font-size="12.5" fill="#7b8794">Giới hạn giờ lái là ràng buộc cứng: vi phạm thì không công bố được tuyến, không phải chỉ cảnh báo.</text>
+<text x="260" y="138" font-size="11.5" fill="#2b6cb0">Vai dùng: dispatcher (ghi) · admin (xem)  ·  Yêu cầu: FR-SCH-01 · FR-SCH-02 · FR-SCH-04 · OPS-LAW-01</text>
+<rect x="260" y="160" width="1152" height="266" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="183" font-size="13" font-weight="700" fill="#1f2933">Thông tin tuyến</text>
+<rect x="272" y="166" width="26" height="22" rx="5" fill="#c2410c"/>
+<text x="285" y="181" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+<text x="306" y="207" font-size="12" fill="#7b8794">Ngày chạy tuyến <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="214" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<rect x="270" y="195" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="209" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">A-1</text>
+<text x="306" y="267" font-size="12" fill="#7b8794">Tài xế <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="274" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<path d="M 1376 285 l 5 6 l 5 -6" fill="none" stroke="#7b8794" stroke-width="1.6"/>
+<rect x="270" y="255" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="269" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">A-2</text>
+<text x="306" y="327" font-size="12" fill="#7b8794">Xe <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="334" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<path d="M 1376 345 l 5 6 l 5 -6" fill="none" stroke="#7b8794" stroke-width="1.6"/>
+<rect x="270" y="315" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="329" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">A-3</text>
+<rect x="306" y="376" width="335" height="22" rx="11" fill="#f5f7fa" stroke="#cbd2d9"/>
+<text x="473.5" y="391" font-size="12" fill="#1f2933" text-anchor="middle">Trạng thái tuyến: nháp / đã kiểm / đã công bố</text>
+<rect x="270" y="375" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="389" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">A-4</text>
+<rect x="260" y="444" width="1152" height="330" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="467" font-size="13" font-weight="700" fill="#1f2933">Các đoạn thời gian trong ngày</text>
+<rect x="272" y="450" width="26" height="22" rx="5" fill="#c2410c"/>
+<text x="285" y="465" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+<rect x="306" y="478" width="1090" height="154" rx="5" fill="#ffffff" stroke="#cbd2d9"/>
+<rect x="306" y="478" width="1090" height="34" fill="#f5f7fa"/>
+<text x="318" y="500" font-size="11.5" font-weight="600" fill="#7b8794">Thứ tự</text>
+<text x="590.5" y="500" font-size="11.5" font-weight="600" fill="#7b8794">Loại đoạn</text>
+<line x1="578.5" y1="478" x2="578.5" y2="632" stroke="#cbd2d9"/>
+<text x="863" y="500" font-size="11.5" font-weight="600" fill="#7b8794">Bắt đầu</text>
+<line x1="851" y1="478" x2="851" y2="632" stroke="#cbd2d9"/>
+<text x="1135.5" y="500" font-size="11.5" font-weight="600" fill="#7b8794">Kết thúc</text>
+<line x1="1123.5" y1="478" x2="1123.5" y2="632" stroke="#cbd2d9"/>
+<line x1="306" y1="512" x2="1396" y2="512" stroke="#cbd2d9"/>
+<text x="318" y="532" font-size="12" fill="#1f2933">1</text>
+<text x="590.5" y="532" font-size="12" fill="#1f2933">Lái</text>
+<text x="863" y="532" font-size="12" fill="#1f2933">06:00</text>
+<text x="1135.5" y="532" font-size="12" fill="#1f2933">10:30</text>
+<line x1="306" y1="542" x2="1396" y2="542" stroke="#cbd2d9"/>
+<text x="318" y="562" font-size="12" fill="#1f2933">2</text>
+<text x="590.5" y="562" font-size="12" fill="#1f2933">Nghỉ</text>
+<text x="863" y="562" font-size="12" fill="#1f2933">10:30</text>
+<text x="1135.5" y="562" font-size="12" fill="#1f2933">11:00</text>
+<line x1="306" y1="572" x2="1396" y2="572" stroke="#cbd2d9"/>
+<text x="318" y="592" font-size="12" fill="#1f2933">3</text>
+<text x="590.5" y="592" font-size="12" fill="#1f2933">Lái</text>
+<text x="863" y="592" font-size="12" fill="#1f2933">11:00</text>
+<text x="1135.5" y="592" font-size="12" fill="#1f2933">14:00</text>
+<line x1="306" y1="602" x2="1396" y2="602" stroke="#cbd2d9"/>
+<text x="318" y="622" font-size="12" fill="#1f2933">4</text>
+<text x="590.5" y="622" font-size="12" fill="#1f2933">Giao hàng</text>
+<text x="863" y="622" font-size="12" fill="#1f2933">14:00</text>
+<text x="1135.5" y="622" font-size="12" fill="#1f2933">15:00</text>
+<rect x="270" y="479" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="493" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">B-1</text>
+<rect x="306" y="658" width="120" height="34" rx="5" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="366" y="680" font-size="13" fill="#1f2933" text-anchor="middle" font-weight="600">Thêm đoạn</text>
+<rect x="270" y="657" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="671" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">B-2</text>
+<text x="306" y="724" font-size="11.5" fill="#7b8794" font-style="italic">Chữ “Nghỉ” ở đây là đoạn dừng trong một tuyến giao. KHÔNG dịch thành 休息期間 — RFP dùng từ đó cho khái niệm luật lao động, nghĩa khác hẳn.</text>
+<rect x="260" y="792" width="1152" height="316" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="815" font-size="13" font-weight="700" fill="#1f2933">Kết quả kiểm giờ lái (改善基準告示)</text>
+<rect x="272" y="798" width="26" height="22" rx="5" fill="#c2410c"/>
+<text x="285" y="813" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+<rect x="306" y="826" width="1090" height="124" rx="5" fill="#ffffff" stroke="#cbd2d9"/>
+<rect x="306" y="826" width="1090" height="34" fill="#f5f7fa"/>
+<text x="318" y="848" font-size="11.5" font-weight="600" fill="#7b8794">Ngưỡng</text>
+<text x="590.5" y="848" font-size="11.5" font-weight="600" fill="#7b8794">Giới hạn</text>
+<line x1="578.5" y1="826" x2="578.5" y2="950" stroke="#cbd2d9"/>
+<text x="863" y="848" font-size="11.5" font-weight="600" fill="#7b8794">Tuyến này</text>
+<line x1="851" y1="826" x2="851" y2="950" stroke="#cbd2d9"/>
+<text x="1135.5" y="848" font-size="11.5" font-weight="600" fill="#7b8794">Kết quả</text>
+<line x1="1123.5" y1="826" x2="1123.5" y2="950" stroke="#cbd2d9"/>
+<line x1="306" y1="860" x2="1396" y2="860" stroke="#cbd2d9"/>
+<text x="318" y="880" font-size="12" fill="#1f2933">Lái liên tục</text>
+<text x="590.5" y="880" font-size="12" fill="#1f2933">≤ 4 giờ</text>
+<text x="863" y="880" font-size="12" fill="#1f2933">4 giờ 30</text>
+<text x="1135.5" y="880" font-size="12" fill="#1f2933">VI PHẠM</text>
+<line x1="306" y1="890" x2="1396" y2="890" stroke="#cbd2d9"/>
+<text x="318" y="910" font-size="12" fill="#1f2933">Thời gian ràng buộc ngày</text>
+<text x="590.5" y="910" font-size="12" fill="#1f2933">13 giờ (tối đa 15)</text>
+<text x="863" y="910" font-size="12" fill="#1f2933">9 giờ 00</text>
+<text x="1135.5" y="910" font-size="12" fill="#1f2933">Đạt</text>
+<line x1="306" y1="920" x2="1396" y2="920" stroke="#cbd2d9"/>
+<text x="318" y="940" font-size="12" fill="#1f2933">Nghỉ giữa hai đoạn lái</text>
+<text x="590.5" y="940" font-size="12" fill="#1f2933">≥ 30 phút</text>
+<text x="863" y="940" font-size="12" fill="#1f2933">30 phút</text>
+<text x="1135.5" y="940" font-size="12" fill="#1f2933">Đạt</text>
+<rect x="270" y="827" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="841" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">C-1</text>
+<rect x="306" y="974" width="1090" height="50" rx="5" fill="#f5f7fa" stroke="#c53030"/>
+<rect x="306" y="974" width="4" height="50" rx="2" fill="#c53030"/>
+<text x="322" y="995" font-size="12.5" font-weight="600" fill="#c53030">Vi phạm lái liên tục — không công bố được tuyến</text>
+<text x="322" y="1013" font-size="12" fill="#1f2933">Chèn một đoạn nghỉ đủ dài để cắt chuỗi lái liên tục, rồi kiểm lại.</text>
+<rect x="270" y="975" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="989" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">C-2</text>
+<rect x="306" y="1046" width="164" height="34" rx="5" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="388" y="1068" font-size="13" fill="#1f2933" text-anchor="middle" font-weight="600">Kiểm lại giờ lái</text>
+<rect x="270" y="1045" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="1059" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">C-3</text>
+<rect x="260" y="1126" width="1152" height="162" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="1149" font-size="13" font-weight="700" fill="#1f2933">Đơn gắn vào tuyến</text>
+<rect x="272" y="1132" width="26" height="22" rx="5" fill="#c2410c"/>
+<text x="285" y="1147" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">D</text>
+<rect x="306" y="1160" width="1090" height="94" rx="5" fill="#ffffff" stroke="#cbd2d9"/>
+<rect x="306" y="1160" width="1090" height="34" fill="#f5f7fa"/>
+<text x="318" y="1182" font-size="11.5" font-weight="600" fill="#7b8794">Mã đơn</text>
+<text x="590.5" y="1182" font-size="11.5" font-weight="600" fill="#7b8794">Khách hàng</text>
+<line x1="578.5" y1="1160" x2="578.5" y2="1254" stroke="#cbd2d9"/>
+<text x="863" y="1182" font-size="11.5" font-weight="600" fill="#7b8794">Dải nhiệt</text>
+<line x1="851" y1="1160" x2="851" y2="1254" stroke="#cbd2d9"/>
+<text x="1135.5" y="1182" font-size="11.5" font-weight="600" fill="#7b8794">Thứ tự giao</text>
+<line x1="1123.5" y1="1160" x2="1123.5" y2="1254" stroke="#cbd2d9"/>
+<line x1="306" y1="1194" x2="1396" y2="1194" stroke="#cbd2d9"/>
+<text x="318" y="1214" font-size="12" fill="#1f2933">ORD-20261116-A1B2C3</text>
+<text x="590.5" y="1214" font-size="12" fill="#1f2933">CUS-003 · Siêu thị Sakura</text>
+<text x="863" y="1214" font-size="12" fill="#1f2933">Mát (冷蔵)</text>
+<text x="1135.5" y="1214" font-size="12" fill="#1f2933">1</text>
+<line x1="306" y1="1224" x2="1396" y2="1224" stroke="#cbd2d9"/>
+<text x="318" y="1244" font-size="12" fill="#1f2933">ORD-20261116-D4E5F6</text>
+<text x="590.5" y="1244" font-size="12" fill="#1f2933">CUS-001 · Chuỗi Midori</text>
+<text x="863" y="1244" font-size="12" fill="#1f2933">Đông (冷凍)</text>
+<text x="1135.5" y="1244" font-size="12" fill="#1f2933">2</text>
+<rect x="270" y="1161" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="1175" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">D-1</text>
+<rect x="260" y="1306" width="1152" height="135" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="1329" font-size="13" font-weight="700" fill="#1f2933">Công bố tuyến</text>
+<rect x="272" y="1312" width="26" height="22" rx="5" fill="#c2410c"/>
+<text x="285" y="1327" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">E</text>
+<rect x="306" y="1342" width="140" height="34" rx="5" fill="#2b6cb0" stroke="none"/>
+<text x="376" y="1364" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">Công bố tuyến</text>
+<rect x="270" y="1341" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="1355" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">E-1</text>
+<text x="306" y="1408" font-size="11.5" fill="#7b8794" font-style="italic">Tuyến đã công bố thì prototype không cho sửa. Thiết kế đúng cho phép sửa có lý do và sinh phiên bản mới → GAP</text>
+<text x="260" y="1475" font-size="10.5" fill="#7b8794">SC4-04 · bản đánh số item (khớp mục 4.1 screen spec) · sinh từ specs/_tools/screens.mjs</text>
+</svg>

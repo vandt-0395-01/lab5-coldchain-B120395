@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="909" viewBox="0 0 1440 909" font-family="Helvetica Neue, Hiragino Sans, Arial, sans-serif">
+<rect width="1440" height="909" fill="#f5f7fa"/>
+<rect x="0" y="0" width="232" height="909" fill="#323f4b"/>
+<text x="20" y="34" font-size="14" font-weight="700" fill="#ffffff">Kho lạnh 3 dải nhiệt</text>
+<text x="20" y="52" font-size="11" fill="#7b8794">三温度帯 · Product B</text>
+<text x="22" y="88" font-size="12.5" fill="#e4e7eb">Dashboard</text>
+<text x="22" y="122" font-size="12.5" fill="#e4e7eb">Master &amp; chính sách</text>
+<text x="22" y="156" font-size="12.5" fill="#e4e7eb">Tồn kho</text>
+<text x="22" y="190" font-size="12.5" fill="#e4e7eb">Lịch sử giao</text>
+<text x="22" y="224" font-size="12.5" fill="#e4e7eb">Cảnh báo nhiệt (温度逸脱)</text>
+<text x="22" y="258" font-size="12.5" fill="#e4e7eb">Reading cảm biến</text>
+<rect x="10" y="272" width="212" height="30" rx="5" fill="#2b6cb0"/>
+<text x="22" y="292" font-size="12.5" fill="#ffffff">Truy xuất</text>
+<rect x="232" y="0" width="1208" height="60" fill="#ffffff"/>
+<line x1="232" y1="60" x2="1440" y2="60" stroke="#cbd2d9"/>
+<text x="1412" y="30" font-size="13" font-weight="600" fill="#1f2933" text-anchor="end">Lê Chất Lượng</text>
+<text x="1412" y="47" font-size="11.5" fill="#7b8794" text-anchor="end">QA / HACCP</text>
+<text x="260" y="92" font-size="21" font-weight="700" fill="#1f2933">Truy xuất nguồn gốc (トレーサビリティ)</text>
+<text x="260" y="118" font-size="12.5" fill="#7b8794">Truy xuất pháp định chỉ bắt buộc với gạo và thịt bò. Mặt hàng khác là khuyến khích, không chặn.</text>
+<text x="260" y="138" font-size="11.5" fill="#2b6cb0">Vai dùng: cả 4 vai (xem)  ·  Yêu cầu: FR-TRC-01 · FR-TRC-02 · BR-TRACE-01 · BR-TRACE-02</text>
+<rect x="260" y="160" width="1152" height="255" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="183" font-size="13" font-weight="700" fill="#1f2933">Tra cứu</text>
+<text x="306" y="207" font-size="12" fill="#7b8794">Tra theo khoá <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="214" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<path d="M 1376 225 l 5 6 l 5 -6" fill="none" stroke="#7b8794" stroke-width="1.6"/>
+<text x="306" y="267" font-size="12" fill="#7b8794">Giá trị cần tra <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="274" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="316" y="292" font-size="12" fill="#cbd2d9">LOT-CHI-002-B</text>
+<text x="306" y="328" font-size="11.5" fill="#7b8794" font-style="italic">Danh sách khoá đầy đủ ở mục 4.2 của screen spec — đừng đọc riêng bảng này rồi thu hẹp xuống vài khoá.</text>
+<rect x="306" y="353" width="120" height="34" rx="5" fill="#2b6cb0" stroke="none"/>
+<text x="366" y="375" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">Tra cứu</text>
+<rect x="260" y="433" width="1152" height="222" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="456" font-size="13" font-weight="700" fill="#1f2933">Chuỗi truy xuất — ngược về nguồn</text>
+<rect x="306" y="467" width="1090" height="154" rx="5" fill="#ffffff" stroke="#cbd2d9"/>
+<rect x="306" y="467" width="1090" height="34" fill="#f5f7fa"/>
+<text x="318" y="489" font-size="11.5" font-weight="600" fill="#7b8794">Mắt xích</text>
+<text x="590.5" y="489" font-size="11.5" font-weight="600" fill="#7b8794">Mã</text>
+<line x1="578.5" y1="467" x2="578.5" y2="621" stroke="#cbd2d9"/>
+<text x="863" y="489" font-size="11.5" font-weight="600" fill="#7b8794">Thời điểm</text>
+<line x1="851" y1="467" x2="851" y2="621" stroke="#cbd2d9"/>
+<text x="1135.5" y="489" font-size="11.5" font-weight="600" fill="#7b8794">Ghi chú</text>
+<line x1="1123.5" y1="467" x2="1123.5" y2="621" stroke="#cbd2d9"/>
+<line x1="306" y1="501" x2="1396" y2="501" stroke="#cbd2d9"/>
+<text x="318" y="521" font-size="12" fill="#1f2933">Nhà cung cấp</text>
+<text x="590.5" y="521" font-size="12" fill="#1f2933">SUP-001 · Thực phẩm Yamato</text>
+<text x="863" y="521" font-size="12" fill="#1f2933">2026-11-10</text>
+<text x="1135.5" y="521" font-size="12" fill="#1f2933">Nhãn giả</text>
+<line x1="306" y1="531" x2="1396" y2="531" stroke="#cbd2d9"/>
+<text x="318" y="551" font-size="12" fill="#1f2933">Phiếu kiểm nhập</text>
+<text x="590.5" y="551" font-size="12" fill="#1f2933">RCP-0007</text>
+<text x="863" y="551" font-size="12" fill="#1f2933">2026-11-10 09:15</text>
+<text x="1135.5" y="551" font-size="12" fill="#1f2933">Nhiệt đo 3,2 °C · đạt</text>
+<line x1="306" y1="561" x2="1396" y2="561" stroke="#cbd2d9"/>
+<text x="318" y="581" font-size="12" fill="#1f2933">Lô</text>
+<text x="590.5" y="581" font-size="12" fill="#1f2933">LOT-CHI-002-B</text>
+<text x="863" y="581" font-size="12" fill="#1f2933">2026-11-10 09:20</text>
+<text x="1135.5" y="581" font-size="12" fill="#1f2933">Hạn 2027-01-20 · 消費期限</text>
+<line x1="306" y1="591" x2="1396" y2="591" stroke="#cbd2d9"/>
+<text x="318" y="611" font-size="12" fill="#1f2933">Đơn đã giao</text>
+<text x="590.5" y="611" font-size="12" fill="#1f2933">ORD-20261112-X7Y8Z9</text>
+<text x="863" y="611" font-size="12" fill="#1f2933">2026-11-12 14:00</text>
+<text x="1135.5" y="611" font-size="12" fill="#1f2933">CUS-003 · Siêu thị Sakura</text>
+<rect x="260" y="673" width="1152" height="194" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="696" font-size="13" font-weight="700" fill="#1f2933">Trường truy xuất pháp định</text>
+<rect x="306" y="707" width="1090" height="50" rx="5" fill="#f5f7fa" stroke="#2b6cb0"/>
+<rect x="306" y="707" width="4" height="50" rx="2" fill="#2b6cb0"/>
+<text x="322" y="728" font-size="12.5" font-weight="600" fill="#2b6cb0">Mặt hàng này thuộc diện bắt buộc truy xuất</text>
+<text x="322" y="746" font-size="12" fill="#1f2933">Chỉ hiện với gạo và thịt bò. Mặt hàng khác thì khối này ẩn và ghi rõ là khuyến khích, không bắt buộc.</text>
+<text x="306" y="794" font-size="13" fill="#1f2933">Mã số cá thể bò (個体識別番号): đúng 10 chữ số</text>
+<text x="306" y="834" font-size="13" fill="#1f2933">Thông tin xuất xứ gạo (産地情報)</text>
+<text x="260" y="901" font-size="10.5" fill="#7b8794">SC4-06 · wireframe · sinh từ specs/_tools/screens.mjs</text>
+</svg>

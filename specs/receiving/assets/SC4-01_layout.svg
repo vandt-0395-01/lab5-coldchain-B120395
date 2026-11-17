@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="2164" viewBox="0 0 1440 2164" font-family="Helvetica Neue, Hiragino Sans, Arial, sans-serif">
+<rect width="1440" height="2164" fill="#f5f7fa"/>
+<rect x="0" y="0" width="232" height="2164" fill="#323f4b"/>
+<text x="20" y="34" font-size="14" font-weight="700" fill="#ffffff">Kho lạnh 3 dải nhiệt</text>
+<text x="20" y="52" font-size="11" fill="#7b8794">三温度帯 · Product B</text>
+<text x="22" y="88" font-size="12.5" fill="#e4e7eb">Dashboard</text>
+<rect x="10" y="102" width="212" height="30" rx="5" fill="#2b6cb0"/>
+<text x="22" y="122" font-size="12.5" fill="#ffffff">Kiểm hàng nhập (入荷検品)</text>
+<text x="22" y="156" font-size="12.5" fill="#e4e7eb">Tồn kho</text>
+<text x="22" y="190" font-size="12.5" fill="#e4e7eb">Lịch sử giao</text>
+<text x="22" y="224" font-size="12.5" fill="#e4e7eb">Truy xuất</text>
+<rect x="232" y="0" width="1208" height="60" fill="#ffffff"/>
+<line x1="232" y1="60" x2="1440" y2="60" stroke="#cbd2d9"/>
+<text x="1412" y="30" font-size="13" font-weight="600" fill="#1f2933" text-anchor="end">Trần Kho Vận</text>
+<text x="1412" y="47" font-size="11.5" fill="#7b8794" text-anchor="end">Nhân viên kho</text>
+<text x="260" y="92" font-size="21" font-weight="700" fill="#1f2933">Kiểm hàng nhập (入荷検品)</text>
+<text x="260" y="118" font-size="12.5" fill="#7b8794">Nhận, từ chối hoặc giữ lại từng dòng hàng. Nhiệt độ so với phiên bản ngưỡng hiệu lực tại THỜI ĐIỂM ĐO.</text>
+<text x="260" y="138" font-size="11.5" fill="#2b6cb0">Vai dùng: warehouse_staff (ghi) · admin (xem)  ·  Yêu cầu: FR-REC-02 · FR-REC-03 · FR-REC-05 · BR-TEMP-01 · BR-TEMP-02 · BR-EXP-01 · BR-TRACE-01/02</text>
+<rect x="260" y="160" width="1152" height="158" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="183" font-size="13" font-weight="700" fill="#1f2933">Tạo phiếu kiểm hàng nhập</text>
+<text x="306" y="207" font-size="12" fill="#7b8794">Nhà cung cấp (仕入先) <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="214" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<path d="M 1376 225 l 5 6 l 5 -6" fill="none" stroke="#7b8794" stroke-width="1.6"/>
+<text x="316" y="232" font-size="12" fill="#cbd2d9">— Chọn nhà cung cấp —</text>
+<rect x="306" y="256" width="120" height="34" rx="5" fill="#2b6cb0" stroke="none"/>
+<text x="366" y="278" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">Tạo phiếu</text>
+<rect x="260" y="336" width="1152" height="192" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="359" font-size="13" font-weight="700" fill="#1f2933">Danh sách phiếu gần đây</text>
+<rect x="306" y="370" width="1090" height="124" rx="5" fill="#ffffff" stroke="#cbd2d9"/>
+<rect x="306" y="370" width="1090" height="34" fill="#f5f7fa"/>
+<text x="318" y="392" font-size="11.5" font-weight="600" fill="#7b8794">Tạo lúc (JST)</text>
+<text x="590.5" y="392" font-size="11.5" font-weight="600" fill="#7b8794">Nhà cung cấp (仕入先)</text>
+<line x1="578.5" y1="370" x2="578.5" y2="494" stroke="#cbd2d9"/>
+<text x="863" y="392" font-size="11.5" font-weight="600" fill="#7b8794">Số dòng</text>
+<line x1="851" y1="370" x2="851" y2="494" stroke="#cbd2d9"/>
+<text x="1135.5" y="392" font-size="11.5" font-weight="600" fill="#7b8794">Đã xác nhận</text>
+<line x1="1123.5" y1="370" x2="1123.5" y2="494" stroke="#cbd2d9"/>
+<line x1="306" y1="404" x2="1396" y2="404" stroke="#cbd2d9"/>
+<text x="318" y="424" font-size="12" fill="#1f2933">2026-11-16 17:02</text>
+<text x="590.5" y="424" font-size="12" fill="#1f2933">SUP-001 · Thực phẩm Yamato</text>
+<text x="863" y="424" font-size="12" fill="#1f2933">2</text>
+<text x="1135.5" y="424" font-size="12" fill="#1f2933">2/2</text>
+<line x1="306" y1="434" x2="1396" y2="434" stroke="#cbd2d9"/>
+<text x="318" y="454" font-size="12" fill="#1f2933">2026-11-16 11:23</text>
+<text x="590.5" y="454" font-size="12" fill="#1f2933">SUP-001 · Thực phẩm Yamato</text>
+<text x="863" y="454" font-size="12" fill="#1f2933">1</text>
+<text x="1135.5" y="454" font-size="12" fill="#1f2933">0/1</text>
+<line x1="306" y1="464" x2="1396" y2="464" stroke="#cbd2d9"/>
+<text x="318" y="484" font-size="12" fill="#cbd2d9">————</text>
+<text x="590.5" y="484" font-size="12" fill="#cbd2d9">————</text>
+<text x="863" y="484" font-size="12" fill="#cbd2d9">————</text>
+<text x="1135.5" y="484" font-size="12" fill="#cbd2d9">————</text>
+<rect x="260" y="546" width="1152" height="746" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="569" font-size="13" font-weight="700" fill="#1f2933">Dòng hàng — thông tin nhận từ nhãn</text>
+<text x="306" y="593" font-size="12" fill="#7b8794">Mã hàng (SKU) <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="600" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<path d="M 1376 611 l 5 6 l 5 -6" fill="none" stroke="#7b8794" stroke-width="1.6"/>
+<text x="306" y="653" font-size="12" fill="#7b8794">Số lượng nhận <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="660" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="713" font-size="12" fill="#7b8794">Số lượng giữ lại</text>
+<rect x="306" y="720" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="773" font-size="12" fill="#7b8794">Ngày sản xuất (製造日) <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="780" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="833" font-size="12" fill="#7b8794">Hạn trên nhãn <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="840" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="893" font-size="12" fill="#7b8794">Loại hạn trên nhãn: 賞味期限 (ngon nhất) / 消費期限 (an toàn) <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="900" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<path d="M 1376 911 l 5 6 l 5 -6" fill="none" stroke="#7b8794" stroke-width="1.6"/>
+<text x="306" y="953" font-size="12" fill="#7b8794">Vị trí nhập kho <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="960" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<path d="M 1376 971 l 5 6 l 5 -6" fill="none" stroke="#7b8794" stroke-width="1.6"/>
+<text x="306" y="1013" font-size="12" fill="#7b8794">Mã lô của nhà cung cấp</text>
+<rect x="306" y="1020" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="1073" font-size="12" fill="#7b8794">Số lượng từ chối</text>
+<rect x="306" y="1080" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="1133" font-size="12" fill="#7b8794">Lý do từ chối hoặc giữ lại</text>
+<rect x="306" y="1140" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<rect x="306" y="1185" width="16" height="16" rx="3" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="330" y="1198" font-size="13" fill="#1f2933">Bao bì nguyên vẹn</text>
+<text x="306" y="1235" font-size="12" fill="#7b8794">Ảnh chụp khi nhận — **mô phỏng**, gõ tay</text>
+<rect x="306" y="1242" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<rect x="260" y="1310" width="1152" height="234" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="1333" font-size="13" font-weight="700" fill="#1f2933">Đo nhiệt độ khi nhận hàng</text>
+<text x="306" y="1357" font-size="12" fill="#7b8794">Nhiệt độ đo (測定温度) °C <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="1364" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="1417" font-size="12" fill="#7b8794">Thời điểm đo (測定時刻) <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="1424" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<rect x="306" y="1464" width="1090" height="50" rx="5" fill="#f5f7fa" stroke="#b7791f"/>
+<rect x="306" y="1464" width="4" height="50" rx="2" fill="#b7791f"/>
+<text x="322" y="1485" font-size="12.5" font-weight="600" fill="#b7791f">Ngoài ngưỡng — lô vào khu cách ly, không vào tồn khả dụng</text>
+<text x="322" y="1503" font-size="12" fill="#1f2933">Hiện ngưỡng đang áp dụng kèm số hiệu phiên bản và ngày hiệu lực, không hiển thị con số cứng.</text>
+<rect x="260" y="1562" width="1152" height="278" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="1585" font-size="13" font-weight="700" fill="#1f2933">Trường truy xuất pháp định</text>
+<text x="306" y="1610" font-size="11.5" fill="#7b8794" font-style="italic">Bẫy ⑤ — ĐỌC KỸ CỘT REQUIRED: “Có” ở khối này là CÓ ĐIỀU KIỆN, không phải luôn bắt buộc. Chỉ gạo và thịt bò thuộc diện bắt buộc, và hai nhóm này LOẠI TRỪ NHAU. Mặt hàng khá…</text>
+<text x="306" y="1663" font-size="12" fill="#7b8794">Mã số cá thể bò (個体識別番号)</text>
+<rect x="306" y="1670" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="316" y="1688" font-size="12" fill="#cbd2d9">đúng 10 chữ số</text>
+<text x="306" y="1723" font-size="12" fill="#7b8794">Thông tin xuất xứ gạo (産地情報)</text>
+<rect x="306" y="1730" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="1783" font-size="12" fill="#7b8794">Mã giao dịch gạo</text>
+<rect x="306" y="1790" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<rect x="260" y="1858" width="1152" height="264" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="1881" font-size="13" font-weight="700" fill="#1f2933">Xác nhận dòng hàng</text>
+<rect x="306" y="1894" width="140" height="34" rx="5" fill="#2b6cb0" stroke="none"/>
+<text x="376" y="1916" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">Xác nhận dòng</text>
+<rect x="306" y="1948" width="120" height="34" rx="5" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="366" y="1970" font-size="13" fill="#1f2933" text-anchor="middle" font-weight="600">Lưu nháp</text>
+<rect x="306" y="2000" width="1090" height="50" rx="5" fill="#f5f7fa" stroke="#c53030"/>
+<rect x="306" y="2000" width="4" height="50" rx="2" fill="#c53030"/>
+<text x="322" y="2021" font-size="12.5" font-weight="600" fill="#c53030">Chặn xác nhận — nêu đúng trường sai</text>
+<text x="322" y="2039" font-size="12" fill="#1f2933">Thiếu trường truy xuất, sai loại hạn, hoặc lệch dải nhiệt giữa SKU và vị trí.</text>
+<rect x="306" y="2072" width="188" height="22" rx="11" fill="#f5f7fa" stroke="#cbd2d9"/>
+<text x="400" y="2087" font-size="12" fill="#1f2933" text-anchor="middle">Đã xác nhận → lô sinh ra</text>
+<text x="260" y="2156" font-size="10.5" fill="#7b8794">SC4-01 · wireframe · sinh từ specs/_tools/screens.mjs</text>
+</svg>

@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1547" viewBox="0 0 1440 1547" font-family="Helvetica Neue, Hiragino Sans, Arial, sans-serif">
+<rect width="1440" height="1547" fill="#f5f7fa"/>
+<rect x="0" y="0" width="232" height="1547" fill="#323f4b"/>
+<text x="20" y="34" font-size="14" font-weight="700" fill="#ffffff">Kho lạnh 3 dải nhiệt</text>
+<text x="20" y="52" font-size="11" fill="#7b8794">三温度帯 · Product B</text>
+<text x="22" y="88" font-size="12.5" fill="#e4e7eb">Dashboard</text>
+<text x="22" y="122" font-size="12.5" fill="#e4e7eb">Tồn kho</text>
+<rect x="10" y="136" width="212" height="30" rx="5" fill="#2b6cb0"/>
+<text x="22" y="156" font-size="12.5" fill="#ffffff">Đơn xuất (出荷指示)</text>
+<text x="22" y="190" font-size="12.5" fill="#e4e7eb">Lập tuyến (配送計画)</text>
+<text x="22" y="224" font-size="12.5" fill="#e4e7eb">Lịch sử giao</text>
+<text x="22" y="258" font-size="12.5" fill="#e4e7eb">Truy xuất</text>
+<rect x="232" y="0" width="1208" height="60" fill="#ffffff"/>
+<line x1="232" y1="60" x2="1440" y2="60" stroke="#cbd2d9"/>
+<text x="1412" y="30" font-size="13" font-weight="600" fill="#1f2933" text-anchor="end">Phạm Điều Phối</text>
+<text x="1412" y="47" font-size="11.5" fill="#7b8794" text-anchor="end">Điều phối</text>
+<text x="260" y="92" font-size="21" font-weight="700" fill="#1f2933">Đơn xuất và phân bổ lô (出荷指示)</text>
+<text x="260" y="118" font-size="12.5" fill="#7b8794">FEFO không phải quy tắc cuối cùng. Lô bị loại ở bước nào thì màn phải nói rõ bước đó.</text>
+<text x="260" y="138" font-size="11.5" fill="#2b6cb0">Vai dùng: dispatcher (ghi) · admin (xem)  ·  Yêu cầu: FR-OUT-01 · FR-OUT-02 · BR-FEFO-01 · BR-DATE-01 · BR-EXP-02</text>
+<rect x="260" y="160" width="1152" height="338" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="183" font-size="13" font-weight="700" fill="#1f2933">Tạo đơn xuất</text>
+<rect x="272" y="166" width="26" height="22" rx="5" fill="#c2410c"/>
+<text x="285" y="181" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+<text x="306" y="207" font-size="12" fill="#7b8794">Khách hàng (得意先) <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="214" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<path d="M 1376 225 l 5 6 l 5 -6" fill="none" stroke="#7b8794" stroke-width="1.6"/>
+<rect x="270" y="195" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="209" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">A-1</text>
+<text x="306" y="267" font-size="12" fill="#7b8794">Mã hàng (SKU) <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="274" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<path d="M 1376 285 l 5 6 l 5 -6" fill="none" stroke="#7b8794" stroke-width="1.6"/>
+<rect x="270" y="255" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="269" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">A-2</text>
+<text x="306" y="327" font-size="12" fill="#7b8794">Số lượng <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="334" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<rect x="270" y="315" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="329" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">A-3</text>
+<text x="306" y="387" font-size="12" fill="#7b8794">Ngày giao yêu cầu (納品希望日) <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="394" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<rect x="270" y="375" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="389" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">A-4</text>
+<rect x="306" y="436" width="204" height="34" rx="5" fill="#2b6cb0" stroke="none"/>
+<text x="408" y="458" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">Tạo đơn và phân bổ lô</text>
+<rect x="270" y="435" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="449" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">A-5</text>
+<rect x="260" y="516" width="1152" height="202" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="539" font-size="13" font-weight="700" fill="#1f2933">Hợp đồng áp dụng</text>
+<rect x="272" y="522" width="26" height="22" rx="5" fill="#c2410c"/>
+<text x="285" y="537" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+<rect x="306" y="550" width="1090" height="64" rx="5" fill="#ffffff" stroke="#cbd2d9"/>
+<rect x="306" y="550" width="1090" height="34" fill="#f5f7fa"/>
+<text x="318" y="572" font-size="11.5" font-weight="600" fill="#7b8794">Mã hợp đồng</text>
+<text x="681.3333333333333" y="572" font-size="11.5" font-weight="600" fill="#7b8794">Quy tắc cửa sổ giao</text>
+<line x1="669.3333333333333" y1="550" x2="669.3333333333333" y2="614" stroke="#cbd2d9"/>
+<text x="1044.6666666666665" y="572" font-size="11.5" font-weight="600" fill="#7b8794">Hiệu lực từ</text>
+<line x1="1032.6666666666665" y1="550" x2="1032.6666666666665" y2="614" stroke="#cbd2d9"/>
+<line x1="306" y1="584" x2="1396" y2="584" stroke="#cbd2d9"/>
+<text x="318" y="604" font-size="12" fill="#1f2933">AGR-003</text>
+<text x="681.3333333333333" y="604" font-size="12" fill="#1f2933">ONE_THIRD (quy tắc 1/3)</text>
+<text x="1044.6666666666665" y="604" font-size="12" fill="#1f2933">2026-01-01</text>
+<rect x="270" y="551" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="565" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">B-1</text>
+<rect x="306" y="638" width="1090" height="50" rx="5" fill="#f5f7fa" stroke="#b7791f"/>
+<rect x="306" y="638" width="4" height="50" rx="2" fill="#b7791f"/>
+<text x="322" y="659" font-size="12.5" font-weight="600" fill="#b7791f">Hợp đồng chưa chốt quy tắc cửa sổ giao → đơn vào trạng thái chờ duyệt tay</text>
+<text x="322" y="677" font-size="12" fill="#1f2933">Hệ thống KHÔNG tự suy ra quy tắc 1/3. Bẫy ③: đây là tập quán hợp đồng, không phải hạn dùng thật của hàng.</text>
+<rect x="270" y="639" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="653" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">B-2</text>
+<rect x="260" y="736" width="1152" height="174" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="759" font-size="13" font-weight="700" fill="#1f2933">Kết quả phân bổ lô</text>
+<rect x="272" y="742" width="26" height="22" rx="5" fill="#c2410c"/>
+<text x="285" y="757" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+<rect x="306" y="770" width="1090" height="64" rx="5" fill="#ffffff" stroke="#cbd2d9"/>
+<rect x="306" y="770" width="1090" height="34" fill="#f5f7fa"/>
+<text x="318" y="792" font-size="11.5" font-weight="600" fill="#7b8794">Mã lô</text>
+<text x="590.5" y="792" font-size="11.5" font-weight="600" fill="#7b8794">Hạn + loại hạn</text>
+<line x1="578.5" y1="770" x2="578.5" y2="834" stroke="#cbd2d9"/>
+<text x="863" y="792" font-size="11.5" font-weight="600" fill="#7b8794">Số lượng</text>
+<line x1="851" y1="770" x2="851" y2="834" stroke="#cbd2d9"/>
+<text x="1135.5" y="792" font-size="11.5" font-weight="600" fill="#7b8794">Vị trí</text>
+<line x1="1123.5" y1="770" x2="1123.5" y2="834" stroke="#cbd2d9"/>
+<line x1="306" y1="804" x2="1396" y2="804" stroke="#cbd2d9"/>
+<text x="318" y="824" font-size="12" fill="#1f2933">LOT-CHI-002-B</text>
+<text x="590.5" y="824" font-size="12" fill="#1f2933">2027-01-20 · 消費期限</text>
+<text x="863" y="824" font-size="12" fill="#1f2933">100</text>
+<text x="1135.5" y="824" font-size="12" fill="#1f2933">C-01-03</text>
+<rect x="270" y="771" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="785" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">C-1</text>
+<rect x="306" y="860" width="405" height="22" rx="11" fill="#f5f7fa" stroke="#cbd2d9"/>
+<text x="508.5" y="875" font-size="12" fill="#1f2933" text-anchor="middle">Trạng thái đơn: đã phân bổ / chờ duyệt tay / thiếu hàng</text>
+<rect x="270" y="859" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="873" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">C-2</text>
+<rect x="260" y="928" width="1152" height="313" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="951" font-size="13" font-weight="700" fill="#1f2933">Vì sao các lô khác bị loại — bảng giải trình</text>
+<rect x="272" y="934" width="26" height="22" rx="5" fill="#c2410c"/>
+<text x="285" y="949" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">D</text>
+<text x="306" y="976" font-size="11.5" fill="#7b8794" font-style="italic">Đây là phần quan trọng nhất của màn. Không có nó thì người dùng không hiểu vì sao hệ thống bỏ qua lô hạn sớm nhất và sẽ nghi hệ thống sai.</text>
+<rect x="306" y="1016" width="1090" height="154" rx="5" fill="#ffffff" stroke="#cbd2d9"/>
+<rect x="306" y="1016" width="1090" height="34" fill="#f5f7fa"/>
+<text x="318" y="1038" font-size="11.5" font-weight="600" fill="#7b8794">Mã lô</text>
+<text x="590.5" y="1038" font-size="11.5" font-weight="600" fill="#7b8794">Hạn</text>
+<line x1="578.5" y1="1016" x2="578.5" y2="1170" stroke="#cbd2d9"/>
+<text x="863" y="1038" font-size="11.5" font-weight="600" fill="#7b8794">Bị loại ở bước</text>
+<line x1="851" y1="1016" x2="851" y2="1170" stroke="#cbd2d9"/>
+<text x="1135.5" y="1038" font-size="11.5" font-weight="600" fill="#7b8794">Giải thích</text>
+<line x1="1123.5" y1="1016" x2="1123.5" y2="1170" stroke="#cbd2d9"/>
+<line x1="306" y1="1050" x2="1396" y2="1050" stroke="#cbd2d9"/>
+<text x="318" y="1070" font-size="12" fill="#1f2933">LOT-CHI-002-Q</text>
+<text x="590.5" y="1070" font-size="12" fill="#1f2933">2026-12-30</text>
+<text x="863" y="1070" font-size="12" fill="#1f2933">Cách ly</text>
+<text x="1135.5" y="1070" font-size="12" fill="#1f2933">Lô đang ở khu cách ly</text>
+<line x1="306" y1="1080" x2="1396" y2="1080" stroke="#cbd2d9"/>
+<text x="318" y="1100" font-size="12" fill="#1f2933">LOT-CHI-002-A</text>
+<text x="590.5" y="1100" font-size="12" fill="#1f2933">2026-12-25</text>
+<text x="863" y="1100" font-size="12" fill="#1f2933">日付逆転</text>
+<text x="1135.5" y="1100" font-size="12" fill="#1f2933">Hạn sớm hơn lần giao gần nhất cho đún…</text>
+<line x1="306" y1="1110" x2="1396" y2="1110" stroke="#cbd2d9"/>
+<text x="318" y="1130" font-size="12" fill="#1f2933">LOT-CHI-002-C</text>
+<text x="590.5" y="1130" font-size="12" fill="#1f2933">2027-02-10</text>
+<text x="863" y="1130" font-size="12" fill="#1f2933">Cửa sổ giao 1/3</text>
+<text x="1135.5" y="1130" font-size="12" fill="#1f2933">Quá mốc 1/3 hạn dùng tính từ ngày sản…</text>
+<line x1="306" y1="1140" x2="1396" y2="1140" stroke="#cbd2d9"/>
+<text x="318" y="1160" font-size="12" fill="#1f2933">LOT-CHI-002-B</text>
+<text x="590.5" y="1160" font-size="12" fill="#1f2933">2027-01-20</text>
+<text x="863" y="1160" font-size="12" fill="#1f2933">— được chọn —</text>
+<text x="1135.5" y="1160" font-size="12" fill="#1f2933">Qua hết các bước, hạn sớm nhất trong …</text>
+<rect x="270" y="1017" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="1031" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">D-1</text>
+<text x="306" y="1208" font-size="11.5" fill="#7b8794" font-style="italic">Thứ tự bước cố định: hạn an toàn → dải nhiệt → cách ly → cửa sổ giao → 日付逆転 → FEFO. Đổi thứ tự là đổi kết quả.</text>
+<rect x="260" y="1259" width="1152" height="246" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="1282" font-size="13" font-weight="700" fill="#1f2933">Xác nhận giao hàng</text>
+<rect x="272" y="1265" width="26" height="22" rx="5" fill="#c2410c"/>
+<text x="285" y="1280" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">E</text>
+<text x="306" y="1306" font-size="12" fill="#7b8794">Tên người nhận <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="1313" width="1090" height="26" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<rect x="270" y="1294" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="1308" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">E-1</text>
+<text x="306" y="1366" font-size="12" fill="#7b8794">Bằng chứng giao hàng (POD) — mô phỏng, gõ tay <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="1373" width="1090" height="52" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<rect x="270" y="1354" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="1368" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">E-2</text>
+<rect x="306" y="1443" width="164" height="34" rx="5" fill="#2b6cb0" stroke="none"/>
+<text x="388" y="1465" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">Xác nhận đã giao</text>
+<rect x="270" y="1442" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="1456" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">E-3</text>
+<text x="260" y="1539" font-size="10.5" fill="#7b8794">SC4-03 · bản đánh số item (khớp mục 4.1 screen spec) · sinh từ specs/_tools/screens.mjs</text>
+</svg>

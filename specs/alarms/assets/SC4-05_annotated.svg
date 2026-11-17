@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1050" viewBox="0 0 1440 1050" font-family="Helvetica Neue, Hiragino Sans, Arial, sans-serif">
+<rect width="1440" height="1050" fill="#f5f7fa"/>
+<rect x="0" y="0" width="232" height="1050" fill="#323f4b"/>
+<text x="20" y="34" font-size="14" font-weight="700" fill="#ffffff">Kho lạnh 3 dải nhiệt</text>
+<text x="20" y="52" font-size="11" fill="#7b8794">三温度帯 · Product B</text>
+<text x="22" y="88" font-size="12.5" fill="#e4e7eb">Dashboard</text>
+<text x="22" y="122" font-size="12.5" fill="#e4e7eb">Master &amp; chính sách</text>
+<text x="22" y="156" font-size="12.5" fill="#e4e7eb">Tồn kho</text>
+<text x="22" y="190" font-size="12.5" fill="#e4e7eb">Lịch sử giao</text>
+<rect x="10" y="204" width="212" height="30" rx="5" fill="#2b6cb0"/>
+<text x="22" y="224" font-size="12.5" fill="#ffffff">Cảnh báo nhiệt (温度逸脱)</text>
+<text x="22" y="258" font-size="12.5" fill="#e4e7eb">Reading cảm biến</text>
+<text x="22" y="292" font-size="12.5" fill="#e4e7eb">Truy xuất</text>
+<rect x="232" y="0" width="1208" height="60" fill="#ffffff"/>
+<line x1="232" y1="60" x2="1440" y2="60" stroke="#cbd2d9"/>
+<text x="1412" y="30" font-size="13" font-weight="600" fill="#1f2933" text-anchor="end">Lê Chất Lượng</text>
+<text x="1412" y="47" font-size="11.5" fill="#7b8794" text-anchor="end">QA / HACCP</text>
+<text x="260" y="92" font-size="21" font-weight="700" fill="#1f2933">Cảnh báo nhiệt độ (温度逸脱)</text>
+<text x="260" y="118" font-size="12.5" fill="#7b8794">Reading ngoài ngưỡng liên tiếp gom thành một cảnh báo. Đóng cảnh báo bắt buộc có ghi chú xử lý.</text>
+<text x="260" y="138" font-size="11.5" fill="#2b6cb0">Vai dùng: qa_haccp (ghi) · admin (xem)  ·  Yêu cầu: FR-TEMP-02 · FR-TEMP-03 · BR-TEMP-01 · BR-HACCP-01 · DR-TEMP-01</text>
+<rect x="260" y="160" width="1152" height="135" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="183" font-size="13" font-weight="700" fill="#1f2933">Đánh giá lại chuỗi reading</text>
+<rect x="272" y="166" width="26" height="22" rx="5" fill="#c2410c"/>
+<text x="285" y="181" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+<rect x="306" y="196" width="164" height="34" rx="5" fill="#2b6cb0" stroke="none"/>
+<text x="388" y="218" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">Đánh giá reading</text>
+<rect x="270" y="195" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="209" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">A-1</text>
+<text x="306" y="262" font-size="11.5" fill="#7b8794" font-style="italic">Giá trị đúng biên ngưỡng là ĐẠT, không sinh cảnh báo.</text>
+<rect x="260" y="313" width="1152" height="204" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="336" font-size="13" font-weight="700" fill="#1f2933">Hàng đợi cảnh báo</text>
+<rect x="272" y="319" width="26" height="22" rx="5" fill="#c2410c"/>
+<text x="285" y="334" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+<rect x="306" y="347" width="1090" height="94" rx="5" fill="#ffffff" stroke="#cbd2d9"/>
+<rect x="306" y="347" width="1090" height="34" fill="#f5f7fa"/>
+<text x="318" y="369" font-size="11.5" font-weight="600" fill="#7b8794">Zone / dải nhiệt</text>
+<text x="499.66666666666663" y="369" font-size="11.5" font-weight="600" fill="#7b8794">Thời điểm vượt</text>
+<line x1="487.66666666666663" y1="347" x2="487.66666666666663" y2="441" stroke="#cbd2d9"/>
+<text x="681.3333333333333" y="369" font-size="11.5" font-weight="600" fill="#7b8794">Ngưỡng (phiên bản)</text>
+<line x1="669.3333333333333" y1="347" x2="669.3333333333333" y2="441" stroke="#cbd2d9"/>
+<text x="863" y="369" font-size="11.5" font-weight="600" fill="#7b8794">Đỉnh</text>
+<line x1="851" y1="347" x2="851" y2="441" stroke="#cbd2d9"/>
+<text x="1044.6666666666665" y="369" font-size="11.5" font-weight="600" fill="#7b8794">Kéo dài</text>
+<line x1="1032.6666666666665" y1="347" x2="1032.6666666666665" y2="441" stroke="#cbd2d9"/>
+<text x="1226.3333333333333" y="369" font-size="11.5" font-weight="600" fill="#7b8794">Trạng thái</text>
+<line x1="1214.3333333333333" y1="347" x2="1214.3333333333333" y2="441" stroke="#cbd2d9"/>
+<line x1="306" y1="381" x2="1396" y2="381" stroke="#cbd2d9"/>
+<text x="318" y="401" font-size="12" fill="#1f2933">Zone F · Đông (冷凍)</text>
+<text x="499.66666666666663" y="401" font-size="12" fill="#1f2933">2026-11-15 14:30</text>
+<text x="681.3333333333333" y="401" font-size="12" fill="#1f2933">v1: ≤ −18,0 °C</text>
+<text x="863" y="401" font-size="12" fill="#1f2933">−15,0 °C</text>
+<text x="1044.6666666666665" y="401" font-size="12" fill="#1f2933">30 phút</text>
+<text x="1226.3333333333333" y="401" font-size="12" fill="#1f2933">Đang mở</text>
+<line x1="306" y1="411" x2="1396" y2="411" stroke="#cbd2d9"/>
+<text x="318" y="431" font-size="12" fill="#1f2933">Zone C · Mát (冷蔵)</text>
+<text x="499.66666666666663" y="431" font-size="12" fill="#1f2933">2026-11-15 12:00</text>
+<text x="681.3333333333333" y="431" font-size="12" fill="#1f2933">v1: 0,0 – 5,0 °C</text>
+<text x="863" y="431" font-size="12" fill="#1f2933">6,2 °C</text>
+<text x="1044.6666666666665" y="431" font-size="12" fill="#1f2933">45 phút</text>
+<text x="1226.3333333333333" y="431" font-size="12" fill="#1f2933">Đang mở</text>
+<rect x="270" y="348" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="362" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">B-1</text>
+<rect x="306" y="467" width="300" height="22" rx="11" fill="#f5f7fa" stroke="#cbd2d9"/>
+<text x="456" y="482" font-size="12" fill="#1f2933" text-anchor="middle">SLA xác nhận 15 phút — quá hạn thì tô đỏ</text>
+<rect x="270" y="466" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="480" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">B-2</text>
+<rect x="260" y="535" width="1152" height="269" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="558" font-size="13" font-weight="700" fill="#1f2933">Chi tiết cảnh báo</text>
+<rect x="272" y="541" width="26" height="22" rx="5" fill="#c2410c"/>
+<text x="285" y="556" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+<text x="306" y="586" font-size="13" fill="#1f2933">Số liệu bằng chứng: đỉnh nhiệt, thời điểm bắt đầu và kết thúc, thời lượng</text>
+<rect x="270" y="570" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="584" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">C-1</text>
+<rect x="306" y="609" width="1090" height="124" rx="5" fill="#ffffff" stroke="#cbd2d9"/>
+<rect x="306" y="609" width="1090" height="34" fill="#f5f7fa"/>
+<text x="318" y="631" font-size="11.5" font-weight="600" fill="#7b8794">Mã lô</text>
+<text x="590.5" y="631" font-size="11.5" font-weight="600" fill="#7b8794">Mã hàng</text>
+<line x1="578.5" y1="609" x2="578.5" y2="733" stroke="#cbd2d9"/>
+<text x="863" y="631" font-size="11.5" font-weight="600" fill="#7b8794">Số lượng</text>
+<line x1="851" y1="609" x2="851" y2="733" stroke="#cbd2d9"/>
+<text x="1135.5" y="631" font-size="11.5" font-weight="600" fill="#7b8794">Trạng thái hiện tại</text>
+<line x1="1123.5" y1="609" x2="1123.5" y2="733" stroke="#cbd2d9"/>
+<line x1="306" y1="643" x2="1396" y2="643" stroke="#cbd2d9"/>
+<text x="318" y="663" font-size="12" fill="#1f2933">LOT-CHI-001-A</text>
+<text x="590.5" y="663" font-size="12" fill="#1f2933">CHI-001</text>
+<text x="863" y="663" font-size="12" fill="#1f2933">80</text>
+<text x="1135.5" y="663" font-size="12" fill="#1f2933">Khả dụng</text>
+<line x1="306" y1="673" x2="1396" y2="673" stroke="#cbd2d9"/>
+<text x="318" y="693" font-size="12" fill="#1f2933">LOT-CHI-002-A</text>
+<text x="590.5" y="693" font-size="12" fill="#1f2933">CHI-002</text>
+<text x="863" y="693" font-size="12" fill="#1f2933">120</text>
+<text x="1135.5" y="693" font-size="12" fill="#1f2933">Khả dụng</text>
+<line x1="306" y1="703" x2="1396" y2="703" stroke="#cbd2d9"/>
+<text x="318" y="723" font-size="12" fill="#1f2933">LOT-CHI-002-B</text>
+<text x="590.5" y="723" font-size="12" fill="#1f2933">CHI-002</text>
+<text x="863" y="723" font-size="12" fill="#1f2933">100</text>
+<text x="1135.5" y="723" font-size="12" fill="#1f2933">Khả dụng</text>
+<rect x="270" y="610" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="624" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">C-2</text>
+<text x="306" y="771" font-size="11.5" fill="#7b8794" font-style="italic">Hệ thống chỉ LIỆT KÊ lô ảnh hưởng, chưa tự cách ly. QA tự cách ly ở màn Tồn kho → GAP</text>
+<rect x="260" y="822" width="1152" height="186" rx="7" fill="#ffffff" stroke="#cbd2d9"/>
+<text x="306" y="845" font-size="13" font-weight="700" fill="#1f2933">Ghi xử lý và đóng cảnh báo</text>
+<rect x="272" y="828" width="26" height="22" rx="5" fill="#c2410c"/>
+<text x="285" y="843" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">D</text>
+<text x="306" y="869" font-size="12" fill="#7b8794">Nội dung xử lý <tspan fill="#c53030">*</tspan></text>
+<rect x="306" y="876" width="1090" height="52" rx="4" fill="#ffffff" stroke="#cbd2d9"/>
+<rect x="270" y="857" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="871" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">D-1</text>
+<rect x="306" y="946" width="140" height="34" rx="5" fill="#2b6cb0" stroke="none"/>
+<text x="376" y="968" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">Đóng cảnh báo</text>
+<rect x="270" y="945" width="30" height="20" rx="5" fill="#c2410c"/>
+<text x="285" y="959" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">D-2</text>
+<text x="260" y="1042" font-size="10.5" fill="#7b8794">SC4-05 · bản đánh số item (khớp mục 4.1 screen spec) · sinh từ specs/_tools/screens.mjs</text>
+</svg>
