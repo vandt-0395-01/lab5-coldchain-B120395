@@ -23,9 +23,9 @@ Phân theo vai: 77 BE · 24 FE · 17 QA · 8 PM.
 
 Tách khi việc **chia được theo tầng hoặc theo nhóm dữ liệu** mà vẫn chung một định nghĩa xong:
 
-- Một luật phải phủ **nhiều cửa sổ thời gian** — `E10-I6` chia 3 sub cho ngưỡng nhiều ngày / tuần / tháng–năm.
-- Một việc có **vế máy chủ và vế giao diện dính chặt** nhau, review cùng lúc — `E5-I9` và `E5-I9-S1`.
-- Một bảng cần **ràng buộc tầng CSDL kèm bài kiểm chứng** — `E4-I9` và 3 sub của nó.
+- Một luật phải phủ **nhiều cửa sổ thời gian** — `E10-I6` (#75) chia 3 sub cho ngưỡng nhiều ngày / tuần / tháng–năm.
+- Một việc có **vế máy chủ và vế giao diện dính chặt** nhau, review cùng lúc — `E5-I9` (#91) và `E5-I9-S1` (#127).
+- Một bảng cần **ràng buộc tầng CSDL kèm bài kiểm chứng** — `E4-I9` (#68) và 3 sub của nó.
 
 ### Định nghĩa xong (Definition of Done)
 
@@ -73,7 +73,7 @@ Chi tiết từng issue — tiêu đề, spec nguồn, định nghĩa xong, ph�
 | `FR-TRC-02` — thu hồi hàng loạt | Như trên. Là một luồng nghiệp vụ riêng, đáng một vòng đặc tả của chính nó |
 | `FR-RPT-02` — xuất hồ sơ kiểm toán | Như trên |
 | `NFR-SEC-01` — SSO/OIDC và xác thực hai lớp | `GAP-10` xếp mức Thấp, đã khai *Chấp nhận giữ nguyên có lý do*. Là việc hạ tầng, không phải việc sản phẩm |
-| `NFR-AUD-01` — màn tra cứu nhật ký kiểm toán | Dữ liệu đã giữ chỉ-ghi-thêm ở tầng bảng (`E7-I1`); phần còn thiếu chỉ là màn tra cứu |
+| `NFR-AUD-01` — màn tra cứu nhật ký kiểm toán | Dữ liệu đã giữ chỉ-ghi-thêm ở tầng bảng (`E7-I1` (#103)); phần còn thiếu chỉ là màn tra cứu |
 | `NFR-LOC-01` — giao diện tiếng Nhật | Quyết định sản phẩm, không phải việc kỹ thuật. Cần khách chốt trước |
 | 7 yêu cầu phi chức năng còn lại | `PREMISE.md` mục 3 điểm 4: mức ưu tiên của chúng xếp bằng **suy luận, không bằng trích dẫn**. Gom thành một issue hỏi khách (`E7`) thay vì đoán rồi tính tiền trên cái đoán |
 | 8 dòng gap mức Thấp đã khai *Chấp nhận* | Sổ gap ghi rõ lý do chấp nhận cho từng dòng. Mở lại ở LAB-5 là xé quyết định đã chốt của LAB-4 |
@@ -88,21 +88,21 @@ Nó là **epic `E10` độc lập**, không nằm trong `E4` Vòng đời tuyế
 
 | Ràng buộc | Issue | Vì sao tách riêng |
 |---|---|---|
-| Ba ngưỡng trong một ngày tuyến — prototype đã làm | `E10-I1` | Phần duy nhất đang chạy. Tách ra để thấy rõ phần còn lại là bao nhiêu |
-| Bộ đếm lái liên tục, reset bằng quãng **休憩** đủ dài | `E10-I2` | Là một máy trạng thái chạy dọc chuỗi đoạn tuyến, không phải một phép so sánh. Sai nó là sai toàn bộ phép kiểm trong ngày |
-| Bộ quy tắc giờ lái **có phiên bản**, không hồi tố tuyến đã công bố | `E10-I3` | Luật có thể đổi. Tuyến đã công bố phải giữ cách chấm cũ — cùng khuôn với `ADR-005` của ngưỡng nhiệt |
-| Nguồn dữ liệu tích luỹ nhiều ngày | `E10-I5` | Sáu ngưỡng còn lại đều cần lịch sử tuyến của **cùng tài xế**, thứ hiện không có ai dựng |
-| **Sáu ngưỡng chưa làm**, chia theo cửa sổ: nhiều ngày · tuần · tháng · năm | `E10-I6` + 3 sub | `GAP-01` mức **Cao**: prototype mới phủ 3/9 ngưỡng. Mỗi cửa sổ có nguồn dữ liệu và ca biên khác nhau nên không gộp được vào một issue ≤ 2 ngày công |
-| Mã lỗi và mã thông báo cho vi phạm mới | `E10-I7` | Phải mở danh mục trước khi code, nếu không mỗi người tự chế một mã |
-| Vi phạm tầng CSDL bắt được nghèo thông tin hơn tầng API | `E10-I8` | `GAP-27`. Trên nhánh đua, người dùng mất khoảng thời gian vi phạm — đúng thứ `FR-SCH-02` đòi hiển thị |
-| Tầng CSDL kiểm lại sau khi khoá, đối chiếu với hàm thuần | `E10-I9` | Ràng buộc **cứng** thì không được chỉ sống ở tầng API. `ADR-001` và hai lỗ hổng mức Cao của LAB-2 đều sinh ra từ luật chỉ phủ một nửa đường ghi |
-| Giao diện hiện vi phạm và khoá nút công bố | `E10-I10` | Vi phạm phải **chặn**, không phải cảnh báo bỏ qua được |
-| Hai bài kiểm ca biên — trong ngày và tích luỹ | `E10-I11`, `E10-I12` | Ca biên của giờ lái là chỗ dễ sai nhất: đúng biên là đạt hay không đạt |
-| Chốt hai điểm `CẦN XÁC NHẬN` và `OPS-LAW-01` với khách | `E10-I13` | RFP ghi *"lái liên tục tối đa 4 giờ"* nhưng **không ghi số phút nghỉ** reset bộ đếm. Không có số này thì `E10-I2` không viết nổi |
+| Ba ngưỡng trong một ngày tuyến — prototype đã làm | `E10-I1` (#70) | Phần duy nhất đang chạy. Tách ra để thấy rõ phần còn lại là bao nhiêu |
+| Bộ đếm lái liên tục, reset bằng quãng **休憩** đủ dài | `E10-I2` (#71) | Là một máy trạng thái chạy dọc chuỗi đoạn tuyến, không phải một phép so sánh. Sai nó là sai toàn bộ phép kiểm trong ngày |
+| Bộ quy tắc giờ lái **có phiên bản**, không hồi tố tuyến đã công bố | `E10-I3` (#72) | Luật có thể đổi. Tuyến đã công bố phải giữ cách chấm cũ — cùng khuôn với `ADR-005` của ngưỡng nhiệt |
+| Nguồn dữ liệu tích luỹ nhiều ngày | `E10-I5` (#74) | Sáu ngưỡng còn lại đều cần lịch sử tuyến của **cùng tài xế**, thứ hiện không có ai dựng |
+| **Sáu ngưỡng chưa làm**, chia theo cửa sổ: nhiều ngày · tuần · tháng · năm | `E10-I6` (#75) + 3 sub | `GAP-01` mức **Cao**: prototype mới phủ 3/9 ngưỡng. Mỗi cửa sổ có nguồn dữ liệu và ca biên khác nhau nên không gộp được vào một issue ≤ 2 ngày công |
+| Mã lỗi và mã thông báo cho vi phạm mới | `E10-I7` (#76) | Phải mở danh mục trước khi code, nếu không mỗi người tự chế một mã |
+| Vi phạm tầng CSDL bắt được nghèo thông tin hơn tầng API | `E10-I8` (#77) | `GAP-27`. Trên nhánh đua, người dùng mất khoảng thời gian vi phạm — đúng thứ `FR-SCH-02` đòi hiển thị |
+| Tầng CSDL kiểm lại sau khi khoá, đối chiếu với hàm thuần | `E10-I9` (#78) | Ràng buộc **cứng** thì không được chỉ sống ở tầng API. `ADR-001` và hai lỗ hổng mức Cao của LAB-2 đều sinh ra từ luật chỉ phủ một nửa đường ghi |
+| Giao diện hiện vi phạm và khoá nút công bố | `E10-I10` (#79) | Vi phạm phải **chặn**, không phải cảnh báo bỏ qua được |
+| Hai bài kiểm ca biên — trong ngày và tích luỹ | `E10-I11` (#80), `E10-I12` (#81) | Ca biên của giờ lái là chỗ dễ sai nhất: đúng biên là đạt hay không đạt |
+| Chốt hai điểm `CẦN XÁC NHẬN` và `OPS-LAW-01` với khách | `E10-I13` (#82) | RFP ghi *"lái liên tục tối đa 4 giờ"* nhưng **không ghi số phút nghỉ** reset bộ đếm. Không có số này thì `E10-I2` (#71) không viết nổi |
 
 **Tổng: 17 issue mang nhãn `constraint-2024`.**
 
-Phụ thuộc chéo đã ghi trong `backlog.csv`: `E4-I8` (công bố tuyến) phụ thuộc `E10-I1` và `E10-I3` —
+Phụ thuộc chéo đã ghi trong `backlog.csv`: `E4-I8` (#67) (công bố tuyến) phụ thuộc `E10-I1` (#70) và `E10-I3` (#72) —
 không có bộ luật giờ lái thì không công bố được tuyến nào.
 
 ### Một ràng buộc cố tình **không** đưa vào epic này
@@ -130,10 +130,10 @@ chỉ việc ngồi viết định nghĩa xong cho từng task mới bắt đư�
 | # | Spec | Chỗ hở hoặc mâu thuẫn | Xử lý |
 |---|---|---|---|
 | 1 | `DD-OUT-001` §4.3 bước 2 vs §5 | **Mâu thuẫn trong cùng một file** về mốc so 日付逆転: §4.3 nói lấy dòng `completed_at` lớn nhất, §5 nói lấy hạn **nhỏ nhất** của chuyến gần nhất. Một chuyến nhiều lô thì hai cách ra hai kết quả — mà hàm thuần lúc phân bổ và trigger `SHP01` lúc giao **bắt buộc dùng chung một mốc**, không thì tầng bảng chặn đúng thứ tầng phân bổ vừa cho qua | **Đã sửa thiết kế** → `PREMISE.md` mục 1. Đối chiếu trigger `0011` (`order by completed_at desc, expiry_date asc limit 1`): luật đúng là **cả hai vế**. Còn một điều kiện chưa bảo đảm — mọi lô của cùng một lần giao phải mang cùng `completed_at` — đã ghi thành câu hỏi khách |
-| 2 | `DD-RTE-001` §4.3 vs §5 | **拘束時間 đang tính theo *tuyến*, trong khi luật tính theo *ngày làm việc của tài xế***. Không gì cấm một tài xế chạy hai tuyến cùng ngày, không luật nào cộng dồn — hai tuyến 8 giờ đều "đạt" trong khi tài xế đã làm 16 giờ | **Cần giả định mới**: chấm theo tài xế/ngày, ghi trong DoD của `E10-I4`. **Cần khách xác nhận trước khi chốt giá** — đây là lỗ hổng cho phép hệ thống báo đạt trên một ngày vi phạm luật |
+| 2 | `DD-RTE-001` §4.3 vs §5 | **拘束時間 đang tính theo *tuyến*, trong khi luật tính theo *ngày làm việc của tài xế***. Không gì cấm một tài xế chạy hai tuyến cùng ngày, không luật nào cộng dồn — hai tuyến 8 giờ đều "đạt" trong khi tài xế đã làm 16 giờ | **Cần giả định mới**: chấm theo tài xế/ngày, ghi trong DoD của `E10-I4` (#73). **Cần khách xác nhận trước khi chốt giá** — đây là lỗ hổng cho phép hệ thống báo đạt trên một ngày vi phạm luật |
 | 3 | `SC4-03`, `DD-OUT-001` | **"Tồn khả dụng" không có định nghĩa ở bất kỳ spec nào**, trong khi `M_31` và bước đọc lại tồn trong giao dịch đều dựa vào nó | **Cần giả định mới**. Là bước đầu của chuỗi sáu phép loại — sai định nghĩa là sai cả chuỗi |
-| 4 | `SC4-07`, `ADR-005`, `SER-16` | `temp_policies.effective_to` **không có đường ghi nào**: `SER-16` luôn ghi `null`, phiên bản cũ bị chặn cập nhật, giao diện không hiện cột này. Hàm phân giải *có* xử lý `effective_to` đúng, nhưng nhánh đó **chết**, nên trên thực tế việc chọn phiên bản chỉ dựa vào `effective_from` lớn nhất ≤ thời điểm đo. Không spec nào nói ai đóng kỳ hiệu lực | **Cần giả định mới** — ghi vào DoD của `E9-I4-S1`. Đây là lõi của bẫy ①: hỏng chỗ này là chấm sai toàn bộ hồ sơ HACCP |
-| 5 | `BR-HACCP-01`, `COLDCHAIN_DATABASE` | **Hai trong năm nhịp ghi chép HACCP không có bảng nào lưu, không màn nào nhập** — vệ sinh mỗi ca, và khách/tài xế mỗi lượt. Hàng đợi tính đầy đủ hồ sơ không thể tính trên thứ không tồn tại | **Cần issue làm rõ với khách** → `E6-I1`, và nó **chặn** `E6-I2`. Toàn bộ epic `E6` phụ thuộc câu trả lời này |
+| 4 | `SC4-07`, `ADR-005`, `SER-16` | `temp_policies.effective_to` **không có đường ghi nào**: `SER-16` luôn ghi `null`, phiên bản cũ bị chặn cập nhật, giao diện không hiện cột này. Hàm phân giải *có* xử lý `effective_to` đúng, nhưng nhánh đó **chết**, nên trên thực tế việc chọn phiên bản chỉ dựa vào `effective_from` lớn nhất ≤ thời điểm đo. Không spec nào nói ai đóng kỳ hiệu lực | **Cần giả định mới** — ghi vào DoD của `E9-I4-S1` (#9). Đây là lõi của bẫy ①: hỏng chỗ này là chấm sai toàn bộ hồ sơ HACCP |
+| 5 | `BR-HACCP-01`, `COLDCHAIN_DATABASE` | **Hai trong năm nhịp ghi chép HACCP không có bảng nào lưu, không màn nào nhập** — vệ sinh mỗi ca, và khách/tài xế mỗi lượt. Hàng đợi tính đầy đủ hồ sơ không thể tính trên thứ không tồn tại | **Cần issue làm rõ với khách** → `E6-I1` (#97), và nó **chặn** `E6-I2` (#98). Toàn bộ epic `E6` phụ thuộc câu trả lời này |
 
 ### Toàn bộ 67 chỗ
 

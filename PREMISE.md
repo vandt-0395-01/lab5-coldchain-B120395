@@ -6,7 +6,7 @@ LAB-4 để lại **6 điểm chưa chốt** (`specs/PENDING.md`, cộng 5 dòng
 hoặc *Chờ PM ký*). Bẻ task thì không né được: mỗi điểm quyết định có hay không một nhóm issue. Mục
 3 chốt cả 6; mục 1 ghi những chỗ vì thế mà spec phải đổi; mục 2 ghi những chỗ phải đặt giả định.
 
-Mã issue trong file này là **mã tạm** (`E1-I3`…). Sau Bước 5 chúng được thay bằng `#số` thật trên
+Mã issue trong file này là **mã tạm** (`E1-I3` (#21)…). Sau Bước 5 chúng được thay bằng `#số` thật trên
 GitHub Project.
 
 ---
@@ -20,7 +20,7 @@ GitHub Project.
 | `SC4-05` Cảnh báo nhiệt — nguồn dữ liệu đo | **Thêm** | Dữ liệu đo seed sẵn → nhập được tệp CSV của thiết bị ghi nhiệt | `FR-TEMP-01` + `IF-LOG-01` nằm trong 9 mã P0 vắng mặt (`GAP-25`). Không có đường nhập dữ liệu thật thì `SC4-05` không chạy được trên dữ liệu khách | `E5-*` |
 | `SC4-05` + `ALM_EXCURSION_EVAL_DETAIL.md` — dung sai đợt vượt ngưỡng | **Sửa** | Một bản ghi đơn lẻ ngoài ngưỡng cũng sinh cảnh báo (0 phút) → thêm tham số dung sai có cấu hình, **mặc định 0 phút** | `specs/PENDING.md` → `P-12`. Mặc định 0 giữ nguyên nghĩa pháp lý của hồ sơ hiện tại; làm tham số để khách chỉnh được mà không sửa mã nguồn | `E5-*` |
 | `SC4-05` — hồ sơ xử lý sai lệch | **Thêm** | Chỉ có ô "ghi xử lý" lúc đóng cảnh báo → hồ sơ sai lệch có vòng đời riêng | `FR-TEMP-04` P0, vắng mặt theo `GAP-25`. `specs/_common/error-codes.md` đã có `ALM03` (đóng cảnh báo phải có ghi chú) nhưng một dòng ghi chú chưa phải một hồ sơ | `E5-*` |
-| `SC4-05` §6bis + `_common/error-codes.md` — mã thông báo cho cửa sổ quá dày | **Sửa** | Dùng `M_76` ("Hệ thống gặp lỗi, thao tác chưa được ghi") → cấp mã riêng **`M_77`** ("Khoảng thời gian cần chấm có quá nhiều bản ghi đo nên chưa chấm") | **Lỗi của LAB-4, phát hiện khi bẻ task `E5-I3`.** Trần 1000 bản ghi trả HTTP 422 — lỗi của *dữ liệu đầu vào*, không phải lỗi hệ thống. Gán `M_76` thì người dùng đọc ra "hệ thống hỏng" và đi báo quản trị, trong khi việc cần làm là thu hẹp khoảng thời gian | `E5-I3` |
+| `SC4-05` §6bis + `_common/error-codes.md` — mã thông báo cho cửa sổ quá dày | **Sửa** | Dùng `M_76` ("Hệ thống gặp lỗi, thao tác chưa được ghi") → cấp mã riêng **`M_77`** ("Khoảng thời gian cần chấm có quá nhiều bản ghi đo nên chưa chấm") | **Lỗi của LAB-4, phát hiện khi bẻ task `E5-I3` (#85).** Trần 1000 bản ghi trả HTTP 422 — lỗi của *dữ liệu đầu vào*, không phải lỗi hệ thống. Gán `M_76` thì người dùng đọc ra "hệ thống hỏng" và đi báo quản trị, trong khi việc cần làm là thu hẹp khoảng thời gian | `E5-I3` (#85) |
 | `docs/scope.md` | **Thêm** | Không chép sang repo LAB-5 ở Bước 0 → chép đủ | `SC4-05` §3bis/§5/§6 và `DD-ALM-001` §5 trỏ tới file này ở bốn chỗ để lấy căn cứ phạm vi. Thiếu nó thì mọi lập luận phạm vi của màn cảnh báo treo vào một đường dẫn chết | — |
 | `NFR-SEC-03` — mã hoá dữ liệu lưu trữ | **Thêm** | Chỉ mã hoá đường truyền → xét thêm mã hoá CSDL và tệp đính kèm | `GAP-18`: *"mã hoá CSDL, file đính kèm và hàng đợi offline **chưa xét**"*. Là yêu cầu P0. Vế hàng đợi ngoại tuyến để ngoài vì bản này không có chế độ đó | `E7-*` |
 
