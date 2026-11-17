@@ -138,12 +138,17 @@ sinh hàng đợi hồ sơ (`E6`). Nếu khách xác nhận cần gắn, phát s
 **67 chỗ.** Không dòng nào chép lại từ `specs/database/gap-list.md` — sổ gap nói chỗ *prototype làm
 khác thiết kế*; bảng này nói chỗ *thiết kế không đủ để một dev ngồi xuống làm mà không hỏi lại*.
 
-Phân loại cột Xử lý: **45** cần giả định mới · **10** cần issue làm rõ với khách · **6** đã có trong
-`PREMISE.md` · **6** để mở có lý do.
+Phân loại cột Xử lý, đếm lại bằng script trên 67 dòng của [`findings/`](findings/): **43** cần giả
+định mới · **12** cần issue làm rõ với khách · **5** đã có trong `PREMISE.md` · **7** để mở có lý do.
+Cộng lại đúng 67.
 
 Con số 67 tự nó là một kết quả. Bộ specs LAB-4 đã qua một vòng review chéo bốn góc và xanh cả bốn
 cổng kiểm tự động, mà bẻ ra task vẫn lộ ra 67 chỗ phải hỏi lại. Đọc tài liệu không bắt được chúng;
 chỉ việc ngồi viết định nghĩa xong cho từng task mới bắt được.
+
+*Căn cứ cho câu "xanh cả bốn cổng kiểm": `specs/AI-report.md` của LAB-4, mục bốn cổng kiểm. Bản ghi
+chạy cổng nằm ở repo LAB-2 (private) và **không chép sang repo này**, nên người đọc repo công khai
+này không tự đối chiếu được.*
 
 ### Năm chỗ nặng nhất
 
