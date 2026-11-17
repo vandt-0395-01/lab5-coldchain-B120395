@@ -49,6 +49,7 @@ Hai nhóm mã, đừng trộn lẫn:
 | `M_74` | Dòng phiếu vừa bị người khác thay đổi trong lúc bạn xác nhận. Tải lại dòng rồi xác nhận lại. | Lỗi | SC4-01 |
 | `M_75` | Không tìm thấy bản ghi này. Có thể nó vừa bị xoá hoặc đường dẫn sai. | Lỗi | mọi màn |
 | `M_76` | Hệ thống gặp lỗi, thao tác chưa được ghi. Thử lại; còn lỗi thì báo quản trị kèm thời điểm. | Lỗi | mọi màn |
+| `M_77` | Khoảng thời gian cần chấm có quá nhiều bản ghi đo nên **chưa chấm**. Thu hẹp khoảng rồi chạy lại. | Lỗi | SC4-05 |
 
 ## Mã lỗi nghiệp vụ ở tầng CSDL (đã có trong LAB-2)
 

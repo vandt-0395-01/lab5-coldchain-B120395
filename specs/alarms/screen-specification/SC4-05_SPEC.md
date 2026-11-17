@@ -163,7 +163,7 @@ thì dev buộc phải tự đoán.
 
 | Trường | Luật sinh |
 |---|---|
-| Cửa sổ quét của `SER-14` | **24 giờ tính ngược từ bản ghi đo mới nhất trong bảng**, KHÔNG phải từ thời điểm bấm. Hai mốc trùng nhau khi bộ ghi chạy đều, nhưng lệch hẳn khi bộ ghi ngừng — lúc đó hệ thống vẫn chấm lại cửa sổ cũ thay vì trả cửa sổ rỗng. Bảng rỗng thì không đánh giá. Cửa sổ đọc về **đủ 1000 bản ghi trở lên** thì **báo lỗi chứ không đánh giá thiếu** (`M_76`): ở mức đó không phân biệt được "đúng 1000" với "bị cắt", mà đánh giá trên dữ liệu bị cắt sẽ bỏ sót đoạn vượt ngưỡng |
+| Cửa sổ quét của `SER-14` | **24 giờ tính ngược từ bản ghi đo mới nhất trong bảng**, KHÔNG phải từ thời điểm bấm. Hai mốc trùng nhau khi bộ ghi chạy đều, nhưng lệch hẳn khi bộ ghi ngừng — lúc đó hệ thống vẫn chấm lại cửa sổ cũ thay vì trả cửa sổ rỗng. Bảng rỗng thì không đánh giá. Cửa sổ đọc về **đủ 1000 bản ghi trở lên** thì **báo lỗi chứ không đánh giá thiếu** (`M_77`): ở mức đó không phân biệt được "đúng 1000" với "bị cắt", mà đánh giá trên dữ liệu bị cắt sẽ bỏ sót đoạn vượt ngưỡng |
 | `affected_lot_ids` | Lọc lô theo **ba điều kiện cùng lúc**: cùng `zone` với cảnh báo · trạng thái **khác** `scrapped` · `received_at` **≤** thời điểm kết thúc đoạn vượt ngưỡng. Sắp theo mã lô. Nghĩa là lô nhập **sau** khi sự cố kết thúc thì không bị tính |
 | `first_at` · `last_at` · `peak_c` · `duration_minutes` | Suy từ chuỗi bản ghi vượt ngưỡng **liên tiếp**. Một bản ghi đạt ở giữa là cắt chuỗi, thành hai cảnh báo |
 | `reviewed_by` · `first_reviewed_at` · `closed_at` | Máy chủ ghi từ phiên đăng nhập. Client gửi lên bị chặn (`ALM05`) |

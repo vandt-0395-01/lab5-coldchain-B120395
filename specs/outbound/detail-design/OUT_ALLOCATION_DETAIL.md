@@ -127,7 +127,7 @@ không phân bổ một phần.
 | No | Nội dung xử lý |
 |---|---|
 | 1 | Đọc bảng `shipment_history`, lọc đúng **cả hai** điều kiện `customer_id` và `sku_id` của đơn này |
-| 2 | Lấy dòng có `completed_at` **lớn nhất** — đó là lần giao gần nhất |
+| 2 | Sắp theo `completed_at` **giảm dần**, cùng mốc thì `expiry_date` **tăng dần**, lấy dòng đầu — tức lần giao gần nhất, và trong lần đó là **hạn nhỏ nhất**. Hai vế đều bắt buộc: bỏ vế sau thì một chuyến giao nhiều lô sẽ lấy phải lô ghi sau cùng chứ không phải lô hạn ngắn nhất, và tầng bảng sẽ chặn đúng thứ mà tầng phân bổ vừa cho qua |
 | 3 | Chưa có dòng nào → khách này chưa từng nhận mã hàng này → **bước này bỏ qua**, không loại lô nào |
 | 4 | Có → so `expiry_date` của lô với `expiry_date` của dòng đó. **Sớm hơn thì loại**; **bằng nhau thì cho qua** |
 | 5 | Lô bị loại ghi lại cả hạn của lô và hạn đã giao trước, để màn dựng được `M_32` |
@@ -176,7 +176,7 @@ sổ giao hay đổi cách so đảo ngày chỉ phải sửa một hàm và cá
 |---|---|---|
 | 1 | Công thức 1/3 – 1/2 | `ngày sản xuất + floor((hạn − ngày sản xuất) × tỷ lệ)`. **CHẶN BÁO GIÁ** |
 | 3 | Hạn **bằng** lần giao trước | Cho phép; chỉ chặn khi sớm hơn |
-| *(ngoài 16 điểm)* | Chuyến trước giao nhiều hạn khác nhau thì lấy hạn nào làm mốc | Lấy hạn **nhỏ nhất** của chuyến gần nhất. **Câu hỏi này chưa nằm trong 16 điểm CẦN XÁC NHẬN của `scope.md`** — phải bổ sung vào danh sách hỏi khách |
+| *(ngoài 16 điểm)* | Chuyến trước giao nhiều hạn khác nhau thì lấy hạn nào làm mốc | Lấy hạn **nhỏ nhất** của chuyến gần nhất — đã viết thành luật sắp xếp ở mục 4.3 bước 2, khớp với trigger `0011` (`order by completed_at desc, expiry_date asc limit 1`). **Còn một điều kiện chưa được bảo đảm:** luật này chỉ đúng khi mọi lô của *cùng một lần giao* mang **cùng một `completed_at`**; nếu mỗi dòng lô ghi một mốc lệch nhau vài giây thì vế sắp theo hạn không bao giờ chạy. **Câu hỏi này chưa nằm trong 16 điểm CẦN XÁC NHẬN của `scope.md`** — phải bổ sung vào danh sách hỏi khách |
 | 11 | Phân bổ một phần khi thiếu hàng | Không phân bổ một phần |
 
 **Kiểm chứng logic này:**
