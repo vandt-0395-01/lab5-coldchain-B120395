@@ -2,10 +2,14 @@
 
 **Iteration:** Sprint 1 · **Khoảng thời gian giả lập:** 02/11/2026 – 15/11/2026 (10 ngày công: 02–06/11 và 09–13/11)
 
-Board: <https://github.com/users/vandt-0395-01/projects/1> · Đội giả lập: 2 BE · 1 FE · 1 QA · 1 PM (kiêm BrSE)
+**Ngày viết báo cáo:** 17/11/2026 — hai ngày sau khi Sprint 1 đóng, một ngày sau khi Sprint 2 bắt đầu (16/11).
 
-Mọi con số dưới đây đếm trực tiếp từ trường `Status`, `SWP`, `Hours`, `Role`, `Iteration` của GitHub Project
-qua GraphQL, không chép lại từ bản kế hoạch.
+Board: <https://github.com/users/vandt-0395-01/projects/1> · Đội phát triển giả lập: 2 BE · 1 FE · 1 QA (320 giờ mỗi sprint). PM/BrSE là PL, không tính vào đội
+
+Có hai loại số trong báo cáo này. **Số đếm được** (trạng thái, SWP, giờ, vai, iteration) lấy trực tiếp từ
+trường `Status`, `SWP`, `Hours`, `Role`, `Iteration` của GitHub Project qua GraphQL. **Ngày đóng từng issue,
+đường burndown và các tỷ lệ tiến độ (~80 %, ~85 %, giờ thực)** là kịch bản mô phỏng: Project không lưu ngày
+và không có trường tiến độ. Các tỷ lệ đó là ước của tổ trưởng trong buổi điểm tin, không phải số đo từ hệ thống.
 
 ---
 
@@ -41,7 +45,10 @@ Sprint 1 có **33 item**, nhưng chỉ **22 item có điểm riêng** (69 SWP ·
 | BE | 14 | 6 | 4 | — | 158,4 giờ | 160 giờ | **99 %** |
 | FE | 14 | — | — | 3 | 72,8 giờ | 80 giờ | 91 % |
 | QA | 8 | 5 | — | — | 67,2 giờ | 80 giờ | 84 % |
-| PM | 9 | 6 | — | — | 48,0 giờ | 60 giờ | 80 % |
+| PM (thời gian của PL) | 9 | 6 | — | — | 48,0 giờ | — | — |
+
+Năng lực đội phát triển một sprint là **BE 160 + FE 80 + QA 80 = 320 giờ**. 48 giờ việc PM là thời gian của PL
+(PM/BrSE), tách riêng, **không cộng vào 320** và không có mức nạp so với năng lực đội.
 
 Mức nạp BE 99 % là con số đáng lo nhất của bảng này — nó có nghĩa là sprint được xếp với **0 giờ dự phòng**
 cho phía BE. Mọi việc phát sinh ở BE đều phải đẩy một việc khác ra khỏi sprint, và đó đúng là chuyện đã xảy ra.
@@ -102,15 +109,18 @@ Số liệu thô: [`images/burndown.csv`](images/burndown.csv) · hình vẽ: [`
 
 1. Issue vai QA bắt buộc **phải đỏ trên code trước khi sửa**. Bài kiểm viết xong ngày 1–2 nhưng chưa
    đóng được issue nào, vì đóng là khi bài kiểm xanh. Burndown theo SWP không nhìn thấy công đó.
-2. Năm issue vai PM đều là **soạn câu hỏi rồi chờ khách trả lời**. Ngày 03/11 là 文化の日 bên Nhật nên
-   phía khách nghỉ, trượt mất một ngày của vòng hỏi–đáp.
+2. Phần lớn việc vai PM là **soạn câu hỏi rồi chờ khách trả lời**. Project có 8 item `Role = PM`:
+   7 ở Sprint 1, 1 ở Sprint 2. Trong 7 item Sprint 1 có **6 là câu hỏi gửi khách** (`#54`, `#82`,
+   `#97`, `#106`, `#107`, `#108` — 4 đã chốt, 2 còn chờ) và 1 là việc bổ sung mã (`#118`), không
+   phải hỏi khách. Ngày 03/11 là 文化の日 bên Nhật nên phía khách nghỉ, trượt mất một ngày của
+   vòng hỏi–đáp.
 
-**Ngày 3 xuất hiện vạch chặn.** `#71` dừng lại khi đội BE nhận ra 改善基準告示 cho phép chia nhỏ
-休憩 nhưng **không quy định cứng số phút tối thiểu mỗi đoạn** — con số đó là chính sách của từng công ty.
+**Ngày 3 xuất hiện vạch chặn.** `#71` dừng lại vì **RFP không nêu số phút tối thiểu mỗi đoạn nghỉ** (休憩).
+Đối chiếu bản 改善基準告示 chính thức là một phần việc định nghĩa xong của `#82`, nên **chưa có trong RFP → cần hỏi khách**.
 Viết luật reset bộ đếm 4 giờ mà không có số đó thì là đoán, nên đội dừng thay vì đoán. Đây là lựa chọn
 đúng, nhưng nó khoá 4 SWP suốt 7 ngày còn lại.
 
-**Hai ngày cuối dốc đứng (50 → 24, đóng 18 SWP).** Đây không phải đội tăng tốc mà là **dấu hiệu xếp
+**Ba ngày cuối dốc đứng (50 → 24, đóng 26 SWP).** Đây không phải đội tăng tốc mà là **dấu hiệu xếp
 sprint sát trần**: phần lớn việc BE và FE phụ thuộc lẫn nhau nên cùng chín vào cuối. Cụ thể, `#4`
 (form phiên bản ngưỡng, 4 ô C-1…C-4) phải đợi `#9` (bộ phân giải ngưỡng theo mốc đo) xong mới nối được;
 `#9` đóng ngày 12/11 thì `#4` mới đóng được ngày 13/11, và phải làm gấp mất **24 giờ so với 13,8 giờ ước** —
@@ -124,18 +134,32 @@ vượt 74 %. Giờ cứu `#4` lấy từ đúng chỗ đáng lẽ dành cho `#1
 
 | # | Rủi ro | Issue | Ảnh hưởng tới mốc nào | Hành động | Ai làm, khi nào |
 |---|---|---|---|---|---|
-| R1 | Khách chưa chốt **số phút nghỉ tối thiểu mỗi đoạn 休憩**. Không có số này thì luật reset bộ đếm lái 4 giờ không viết được, và cả epic E10 (61 SWP) đứng — đây là phần ràng buộc **pháp lý lao động**, sai là vi phạm 改善基準告示, không phải lỗi hiển thị. | #71, #82 | E10 trượt là trượt mốc nghiệm thu lập tuyến; lập tuyến không công bố được thì E4 cũng không đóng | Gọi điện thay vì chờ thư. Quá hạn thì **chốt tạm 30 phút liền mạch** (mức an toàn nhất của 改善基準告示), ghi rõ là giả định trong PREMISE và đưa vào danh sách yêu cầu thay đổi — không để issue treo sang sprint thứ ba | PM — có câu trả lời **trước 20/11/2026**, tức trước nửa đầu Sprint 2 |
-| R2 | **Vòng hỏi–đáp với khách là đường găng thật**, không phải việc phụ. 5/7 issue PM phải chờ khách; Sprint 1 đã trượt 1 ngày vì 文化の日 03/11. Sprint 2 có **勤労感謝の日 23/11**, cùng kiểu | #82, #108 | Mọi epic có issue PM mở: E6, E7, E10 | Gửi trọn bộ câu hỏi còn mở **trước 20/11** để vòng trả lời không rơi vào ngày nghỉ; mỗi câu hỏi kèm phương án mặc định để khách chỉ cần gật hoặc sửa | PM — gửi **trước 20/11/2026** |
+| R1 | RFP không nêu **số phút nghỉ tối thiểu mỗi đoạn 休憩**, và việc đối chiếu bản 改善基準告示 chính thức chưa làm xong (thuộc `#82`) → cần hỏi khách. Không có số này thì luật reset bộ đếm lái 4 giờ không viết được. `#71` chặn trực tiếp `#80` (E10-I11, 3 SWP). Câu hỏi `#82` còn phủ hai điểm CẦN XÁC NHẬN của bộ ngưỡng giờ lái, nên chưa chốt thì ảnh hưởng rộng hơn một dây phụ thuộc. Đây là phần ràng buộc **pháp lý lao động**, không phải lỗi hiển thị. | #71, #82 | `#80` bị chặn trực tiếp; việc chốt bộ ngưỡng giờ lái nói chung chậm theo. Tác động lên mốc nghiệm thu lập tuyến và E4 **[CẦN XÁC NHẬN]** — chưa lần theo hết phụ thuộc | Gọi điện thay vì chờ thư. Quá hạn thì có thể tạm dùng **30 phút liền mạch** làm phương án chạy thử **[CẦN XÁC NHẬN]** — đây là đề xuất của đội, chưa đối chiếu văn bản 告示; ghi rõ là giả định trong PREMISE và đưa vào danh sách yêu cầu thay đổi — không để issue treo sang sprint thứ ba | PM — có câu trả lời **trước 20/11/2026**, tức trước nửa đầu Sprint 2 |
+| R2 | **Vòng hỏi–đáp với khách là đường găng thật**, không phải việc phụ. Project có 8 item vai PM, các issue này phải chờ khách; Sprint 1 đã trượt 1 ngày vì 文化の日 03/11. Sprint 2 có **勤労感謝の日 23/11**, cùng kiểu | #82, #108 | Mọi epic có issue PM mở: E6, E7, E10 | Gửi trọn bộ câu hỏi còn mở **trước 20/11** để vòng trả lời không rơi vào ngày nghỉ; mỗi câu hỏi kèm phương án mặc định để khách chỉ cần gật hoặc sửa | PM — gửi **trước 20/11/2026** |
 | R3 | Mã hoá dữ liệu ở trạng thái nghỉ cần **đổi gói Supabase** — nằm ngoài tầm quyết của đội phát triển | #134, #105 | E7; đây là hạng mục an toàn dữ liệu cá nhân, không hoãn sang giai đoạn sau được | Chốt ngân sách hạ tầng. Nếu chưa duyệt kịp thì tách phần mã hoá tệp đính kèm ở tầng ứng dụng ra làm trước, phần mã hoá CSDL chờ | PM + hạ tầng — **trước 19/11/2026** |
-| R4 | **Sprint xếp sát trần**: BE nhận 158,4 giờ trên 160 giờ năng lực (99 %). Không còn chỗ cho việc phát sinh, nên một issue vượt ước là lập tức đẩy một issue khác ra | toàn Sprint 1 | Lặp lại ở Sprint 2 thì tồn tiếp tục dồn | Hạ mức nạp BE Sprint 2 xuống **không quá 85 %** (≈136 giờ), phần dôi để dành cho tồn và việc phát sinh | PM — tại buổi lập kế hoạch Sprint 2, **16/11/2026** |
+| R4 | **Sprint xếp sát trần**: BE nhận 158,4 giờ trên 160 giờ năng lực (99 %), năng lực đội phát triển là 320 giờ (BE 160 + FE 80 + QA 80). Không còn chỗ cho việc phát sinh, nên một issue vượt ước là lập tức đẩy một issue khác ra | toàn Sprint 1 | Lặp lại ở Sprint 2 thì tồn tiếp tục dồn | Hạ mức nạp BE Sprint 2 xuống **không quá 85 %** (≈136 giờ), phần dôi để dành cho tồn và việc phát sinh | PM — **trước 19/11/2026**. Buổi lập kế hoạch Sprint 2 đã họp ngày 16/11 và **không chốt được việc này** vì con số 320 giờ chỉ lộ ra ở vòng review chéo ngày 17/11; phải họp bù ngay trong tuần |
 | R5 | **Lỗi xếp sprint do chính đội gây ra**: ba issue cha `#40` (E3-I3), `#85` (E5-I3), `#92` (E5-I10) nằm ở Sprint 1 nhưng sub-issue duy nhất của chúng lại ở Sprint 2. Cha không thể xong trước con, nên ba dòng này không bao giờ đóng được trong Sprint 1 | #40, #85, #92 | Không mất giờ công (điểm của cha là tổng của con nên không lọt vào 69 SWP), nhưng làm bảng trạng thái sai lệch và khó đọc | Chuyển ba issue cha sang Sprint 2 cho khớp con. Thêm bước kiểm tự động khi lập sprint: **cha và con phải cùng iteration** | PM — **trước 18/11/2026** |
-| R6 | **Hai chỗ ước hụt lộ ra trong sprint**, đều cùng một kiểu: phần việc không nhìn thấy lúc ước. `#4` vượt 74 % vì phải đợi `#9`; `#133` vượt vì phải dựng bộ token thật cho 4 vai mới gọi thẳng RPC được, phần dựng đó không có trong ước | #4, #133 | Ước của 85 issue Sprint 2 có thể mang cùng sai số | Rà lại các issue Sprint 2 có chữ "chứng minh" hoặc "kiểm" trong tiêu đề, cộng thêm phần dựng dữ liệu và tài khoản thử; rà các issue FE phụ thuộc một issue BE chưa đóng | PM + BrSE — tại buổi lập kế hoạch Sprint 2, **16/11/2026** |
+| R6 | **Hai chỗ ước hụt lộ ra trong sprint**, đều cùng một kiểu: phần việc không nhìn thấy lúc ước. `#4` vượt 74 % vì phải đợi `#9`; `#133` vượt vì phải dựng bộ token thật cho 4 vai mới gọi thẳng RPC được, phần dựng đó không có trong ước | #4, #133 | Ước của 85 issue Sprint 2 có thể mang cùng sai số | Rà lại các issue Sprint 2 có chữ "chứng minh" hoặc "kiểm" trong tiêu đề, cộng thêm phần dựng dữ liệu và tài khoản thử; rà các issue FE phụ thuộc một issue BE chưa đóng | PM + BrSE — **trước 19/11/2026**, cùng buổi họp bù với R4 |
+| R7 | **Cơ cấu đội lệch so với backlog**: theo từng vai, BE cần 9,8 sprint, QA 5,0, FE chỉ 3,1. Giờ không điều phối được giữa các vai, nên BE là nút thắt | toàn backlog | Tiến độ cả dự án bị BE quyết định; FE rảnh trong khi BE quá tải | Xem lại cơ cấu đội (thêm BE hoặc đổi thứ tự việc để FE/QA đỡ BE) và báo khách cùng con số này | PM — trước **20/11/2026** |
 
 ### Nói rõ về quy mô còn lại
 
-Sprint 2 trên board hiện mang **359 SWP / 2 125,5 giờ**, cộng 24 SWP tồn từ Sprint 1. Với năng lực
-380 giờ mỗi sprint của đội này thì đó là **khoảng 5,6 sprint nữa**, không phải một sprint.
+Sprint 2 trên board hiện mang **85 issue có điểm riêng, 359 SWP / 2 125,5 giờ**. Cộng thêm phần tồn từ
+Sprint 1 (6 issue, 24 SWP, 119,9 giờ), đội phát triển (BE+FE+QA) còn **2 215,8 giờ** việc. Chia cho năng lực
+320 giờ mỗi sprint thì là **khoảng 6,9 sprint nữa**, không phải một sprint.
+
+Con số 6,9 giả định điều phối được giờ giữa các vai, mà thực tế **không**. Tính theo từng vai:
+
+| Vai | Giờ còn lại (gồm tồn) | Năng lực mỗi sprint | Số sprint |
+|---|---:|---:|---:|
+| BE | 1 562,1 | 160 | **9,8** (nút thắt) |
+| QA | 402,7 | 80 | 5,0 |
+| FE | 251,0 | 80 | 3,1 |
+
+Việc PM (10,3 giờ của Sprint 2 và 19,3 giờ tồn) là thời gian của PL, không nằm trong bảng. Kết luận cần báo
+khách: **cơ cấu đội hiện tại lệch so với backlog này.** BE mất khoảng 9,8 sprint trong khi FE chỉ cần 3,1,
+nên làm đúng 6,9 sprint là không đạt được nếu giữ nguyên cơ cấu (xem R7).
 
 "Sprint 2" ở đây là **phần tồn chưa chia đợt**, không phải một sprint đã lập kế hoạch. Nói là làm xong
-trong hai tuần tới thì sai. Phần chia đợt thật phải làm ở buổi lập kế hoạch 16/11, sau khi chốt xong
+trong hai tuần tới thì sai. Phần chia đợt thật phải làm ở buổi họp bù trước 19/11, sau khi chốt xong
 R4 (hạ mức nạp) và R5 (xếp lại cha–con).

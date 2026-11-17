@@ -5,6 +5,9 @@ Báo cáo HTML của skill chấm SWP: [`reports/swp-lab5-backlog.html`](reports
 
 **428 SWP · 2 472 giờ · 309 MD · 15,45 MM** trên 107 item chấm trực tiếp.
 
+Bảng tổng theo epic ở mục 3 ghi 126 item: `126 = 107 dòng chấm trực tiếp + 19 issue vật chứa`. Issue
+vật chứa là issue có sub-issue, điểm của nó là tổng của con, nên SWP và giờ **không bị đếm hai lần**.
+
 Skill dùng: `/tkm:estimate-swp --level medium`. Mô hình là `Scope × Complexity → SWP` tra một ma
 trận cố định, **không bao giờ cộng hai trục** — độ khó nhân lên theo từng đơn vị bề rộng:
 
@@ -112,6 +115,9 @@ Bình quân thực tế rơi vào **5,78 giờ/SWP**. Mọi con số trong file 
 
 ## 4. So với estimate LAB-1
 
+Nguồn số LAB-1 là workbook estimate của LAB-1 (`07_estimate-wbs-cost.xlsx`), không nằm trong repo
+này và không công khai, nên người đọc không tự đối chiếu được.
+
 LAB-1 ước theo 12 nhóm chức năng, đơn vị MD, quy đổi 1 MM = 20 MD. Ánh xạ epic LAB-5 sang nhóm
 LAB-1 để so cùng một đơn vị:
 
@@ -134,14 +140,14 @@ LAB-1 để so cùng một đơn vị:
 
 ### Ba điều phải nói rõ khi đọc bảng trên
 
-**Không được đem 309 MD so thẳng với 720,5 MD tổng của LAB-1.** LAB-1 có thêm **289,5 MD** việc
+**Không được đem 309 MD so thẳng với 721,0 MD tổng của LAB-1.** LAB-1 có thêm **289,5 MD** việc
 chung và quản lý (`KD-001`…`016`: môi trường, CI/CD, họp, quản lý dự án, nghiệm thu) mà LAB-5 chưa
 bẻ ra task, và **75,5 MD** của ba nhóm nằm ngoài phạm vi. So đúng là **309 với 356 MD** — chín nhóm
 LAB-5 có phủ.
 
 **Chênh −13% ở chín nhóm đó là hợp lý, không phải dấu hiệu ước hụt.** Nó đến từ những chỗ LAB-5 cố
-ý để ngoài và có ghi lý do từng dòng ở `task-breakdown.md` mục 2. Nếu đưa ba nhóm bị cắt vào, con
-số sẽ vượt LAB-1.
+ý để ngoài và có ghi lý do từng dòng ở `task-breakdown.md` mục 2. Ba nhóm còn lại (`FN-09`, `FN-11`,
+`FN-12`) LAB-5 chưa bẻ task nên chưa ước, không so được.
 
 **Chỗ đáng lo ngược lại: `FN-06` vọt +97%.** Đây không phải LAB-5 ước thừa — đây là LAB-1 **ước
 hụt** mảng giờ lái xe, và chỉ lộ ra khi bẻ task tới mức từng ngưỡng. Nếu con số LAB-1 đã dùng để

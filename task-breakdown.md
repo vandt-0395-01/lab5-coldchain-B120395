@@ -13,7 +13,7 @@ Phân theo vai: 77 BE · 24 FE · 17 QA · 8 PM.
 
 | Luật | Nội dung |
 |---|---|
-| Trần thời gian | Một issue làm xong trong **≤ 2 ngày công**. Vượt thì tách sub-issue |
+| Trần thời gian | Đề bài yêu cầu một issue làm xong trong **≤ 2 ngày công (16 giờ)**, vượt thì tách sub-issue. **Backlog này chưa đạt trần đó** — xem mục *Trần 16 giờ: chưa đạt* ngay dưới |
 | Một issue = một việc | Tiêu đề phải là một hành động. **Cấm** issue kiểu *"Làm màn Đơn xuất"* — đó là một epic, không phải một task |
 | Một luật nghiệp vụ = một issue | Sáu bẫy nghiệp vụ không bao giờ gộp vào nhau, cũng không gộp vào issue dựng màn. Lý do: mỗi luật có ca biên riêng và người review khác nhau |
 | Tách theo vai | Phần máy chủ, phần giao diện và phần kiểm thử là **ba issue**, không phải ba việc trong một issue. Trường `Role` trên Project ghi vai, và đó cũng là cơ sở quy SWP ra giờ |
@@ -25,7 +25,25 @@ Tách khi việc **chia được theo tầng hoặc theo nhóm dữ liệu** mà
 
 - Một luật phải phủ **nhiều cửa sổ thời gian** — `E10-I6` (#75) chia 3 sub cho ngưỡng nhiều ngày / tuần / tháng–năm.
 - Một việc có **vế máy chủ và vế giao diện dính chặt** nhau, review cùng lúc — `E5-I9` (#91) và `E5-I9-S1` (#127).
-- Một bảng cần **ràng buộc tầng CSDL kèm bài kiểm chứng** — `E4-I9` (#68) và 3 sub của nó.
+- Một bảng cần **ràng buộc tầng CSDL kèm bài kiểm chứng** — `E4-I9` (#68) và 3 sub của nó. Ví dụ này **cũng vi phạm trần**: `E4-I9-S2` = 36 giờ và `E4-I9-S3` = 24 giờ, đều nằm trong nhóm 72 dòng vượt ở mục dưới. Nó minh hoạ *cách* tách, không minh hoạ một kết quả đã đạt trần.
+
+### Trần 16 giờ: chưa đạt
+
+**Đo trên `backlog.csv`.** Lọc dòng không phải `type=epic`, không có sub-issue, `hours > 16`: **72 trên 107 dòng được chấm trực tiếp** vượt trần. Theo vai: **53 BE · 16 QA · 3 FE**. Nhỏ nhất trong nhóm vượt là 17,2 giờ. Lớn nhất là `E10-I9` = **69,0 giờ**, gần 9 ngày công cho một issue. Vài dòng nặng khác: `E3-I5` 62,1 giờ · `E3-I9` 54,0 giờ · `E2-I4`, `E3-I14`, `E3-I15` đều 41,4 giờ.
+
+**Nguyên nhân gốc: hai thước đo chưa bao giờ được đối chiếu với nhau.**
+
+1. Lúc **bẻ task**, trần "≤ 2 ngày công" được áp bằng cảm nhận về *phạm vi* một issue.
+2. Lúc **quy ra giờ** (`estimate.md`), công thức `giờ = SWP_cuối × hệ_số[vai] × buffer` mới cho ra *thời lượng*. Hệ số BE khoảng 5 giờ/SWP, nên một issue 5 SWP đã ra ~28,75 giờ — vượt trần ngay, dù phạm vi của nó vẫn gọn.
+
+Chỉ khi review chéo đặt hai con số cạnh nhau thì mâu thuẫn mới lộ ra. Nó không phải lỗi đánh máy mà là lỗi quy trình: không bước nào kiểm "giờ ≤ 16" sau khi giờ được tính.
+
+**Cách đã chọn: khai thật, giữ nguyên backlog và Project.** PM chốt không bẻ lại ở vòng này, để giữ số liệu Sprint 1 và báo cáo tiến độ đã khớp nhau. Hệ quả: backlog nộp đi vẫn còn 72 issue to hơn trần đề bài.
+
+**Việc phải làm trước khi chạy thật:**
+
+- Nhóm vượt **36 giờ** — **11 dòng**: `E2-I4`, `E3-I5`, `E3-I9`, `E3-I14`, `E3-I15`, `E4-I8`, `E5-I5`, `E5-I7`, `E5-I14`, `E10-I3`, `E10-I9`. Bẻ thành sub-issue ≤ 16 giờ, chấm lại SWP, đẩy lại Project, **trước sprint đầu**.
+- Nhóm **17–36 giờ** — **61 dòng**: rà lại từng dòng khi lập sprint; tách khi issue vào sprint mà không nhét vừa một người trong 2 ngày công. (11 + 61 = 72, khớp con số ở trên.)
 
 ### Định nghĩa xong (Definition of Done)
 
@@ -39,10 +57,10 @@ Mọi issue có cột `dod` trong `backlog.csv`, viết **một câu kiểm ch�
 
 ### Epic → issue → sub-issue trên Project
 
-- **Epic** = một issue mang nhãn `epic`, là vật chứa. Không ước lượng, không gán vai.
+- **Epic** = một issue mang nhãn `epic`, là vật chứa. Không chấm riêng và không gán vai. Trên Project, epic **có** giá trị `SWP` và `Hours`, nhưng đó là tổng cộng dồn của các con, không phải số ước lượng của chính epic (ví dụ `E10`).
 - **Issue** = con của epic qua quan hệ sub-issue của GitHub, mang `SWP`, `Hours`, `Role`, `Status`, `Iteration`.
 - **Sub-issue** = con của issue. Cũng mang đủ trường, vì nó cũng là việc ai đó phải làm.
-- Nhãn: tên epic · `constraint-2024` cho 17 issue chịu ràng buộc giờ lái · `trap` cho issue chạm bẫy nghiệp vụ.
+- Nhãn: tên epic · `constraint-2024` cho 16 issue chịu ràng buộc giờ lái (cộng epic `E10`, tổng 17 dòng mang nhãn) · `trap` cho issue chạm bẫy nghiệp vụ.
 
 ---
 
@@ -75,8 +93,10 @@ Chi tiết từng issue — tiêu đề, spec nguồn, định nghĩa xong, ph�
 | `NFR-SEC-01` — SSO/OIDC và xác thực hai lớp | `GAP-10` xếp mức Thấp, đã khai *Chấp nhận giữ nguyên có lý do*. Là việc hạ tầng, không phải việc sản phẩm |
 | `NFR-AUD-01` — màn tra cứu nhật ký kiểm toán | Dữ liệu đã giữ chỉ-ghi-thêm ở tầng bảng (`E7-I1` (#103)); phần còn thiếu chỉ là màn tra cứu |
 | `NFR-LOC-01` — giao diện tiếng Nhật | Quyết định sản phẩm, không phải việc kỹ thuật. Cần khách chốt trước |
-| 7 yêu cầu phi chức năng còn lại | `PREMISE.md` mục 3 điểm 4: mức ưu tiên của chúng xếp bằng **suy luận, không bằng trích dẫn**. Gom thành một issue hỏi khách (`E7`) thay vì đoán rồi tính tiền trên cái đoán |
-| 8 dòng gap mức Thấp đã khai *Chấp nhận* | Sổ gap ghi rõ lý do chấp nhận cho từng dòng. Mở lại ở LAB-5 là xé quyết định đã chốt của LAB-4 |
+| 12 mã yêu cầu phi chức năng (gồm ba mã nêu trên) | Sổ yêu cầu có **12 mã NFR** và bảng NFR **không có cột ưu tiên** — cột thứ ba là *cách nghiệm thu*. Nên không mã nào có mức ưu tiên xác minh được; mọi mức đã xếp là **suy luận, không phải trích dẫn** (`PREMISE.md` mục 3 điểm 4). Gom thành một issue hỏi khách (`E7`) thay vì đoán rồi tính tiền trên cái đoán |
+| 3 dòng gap đã khai *Chấp nhận*: `GAP-10`, `GAP-11`, `GAP-12` | Sổ gap ghi rõ lý do chấp nhận cho từng dòng. Mở lại ở LAB-5 là xé quyết định đã chốt của LAB-4 |
+| 3 dòng gap *Chờ khách*: `GAP-09`, `GAP-18`, `GAP-26` | Chờ khách trả lời. Đã có issue hỏi khách ở `E7`: `E7-I5` cho `GAP-09`, `E7-I4` cho `GAP-26`; `GAP-18` đã có `E7-I3` + `E7-I3-S1` cho phần mã hoá, phần còn lại chờ khách |
+| 2 dòng gap *Chờ PM ký*: `GAP-24`, `GAP-25` | `PREMISE.md` đã chốt đưa cả hai vào LAB-5, nên **có** issue: `GAP-24` thành epic `E6`. `GAP-25` (chín yêu cầu P0 vắng khỏi thân spec) phủ rải qua các epic. Cột `spec` không mang chuỗi `GAP-25` mà mang **mã yêu cầu**, nên tra theo mã: `BR-HACCP-01` → `E6-I1`…`E6-I6` (#97–#102) · `FR-OUT-05` → `E3-I14`, `E3-I15`, `E3-I16`, `E3-I22` (#51–#53, #59) · `FR-TEMP-01` → `E5-I10`, `E5-I11` (#92, #93) · `FR-TEMP-04` → `E5-I12` (#94). Sáu mã còn lại (`FR-INV-03`, `FR-OUT-04`, `FR-TRC-02`, `FR-RPT-02`, `NFR-SEC-01`, `NFR-AUD-01`) `PREMISE.md` chốt để ngoài kèm lý do |
 | Các màn ngoài 7 màn cốt lõi | Bảng điều khiển, lịch sử giao, dữ liệu cảm biến, các trang chi tiết — `specs/_index.md` đã ghi lý do không viết spec chi tiết ở LAB-4, nên không có gì để bẻ |
 
 ---
@@ -100,7 +120,7 @@ Nó là **epic `E10` độc lập**, không nằm trong `E4` Vòng đời tuyế
 | Hai bài kiểm ca biên — trong ngày và tích luỹ | `E10-I11` (#80), `E10-I12` (#81) | Ca biên của giờ lái là chỗ dễ sai nhất: đúng biên là đạt hay không đạt |
 | Chốt hai điểm `CẦN XÁC NHẬN` và `OPS-LAW-01` với khách | `E10-I13` (#82) | RFP ghi *"lái liên tục tối đa 4 giờ"* nhưng **không ghi số phút nghỉ** reset bộ đếm. Không có số này thì `E10-I2` (#71) không viết nổi |
 
-**Tổng: 17 issue mang nhãn `constraint-2024`.**
+**Tổng: 16 issue + 1 epic (`E10`) mang nhãn `constraint-2024`.**
 
 Phụ thuộc chéo đã ghi trong `backlog.csv`: `E4-I8` (#67) (công bố tuyến) phụ thuộc `E10-I1` (#70) và `E10-I3` (#72) —
 không có bộ luật giờ lái thì không công bố được tuyến nào.

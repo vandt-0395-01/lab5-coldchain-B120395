@@ -44,7 +44,7 @@ sequenceDiagram
     end
     API->>DB: chốt cửa sổ 24 giờ, đọc bản ghi + ngưỡng + lô + vị trí
     alt cửa sổ chạm trần 1000 bản ghi
-        API-->>UI: 422 · không đánh giá trên dữ liệu bị cắt
+        API-->>UI: 422 · M_77 · không đánh giá trên dữ liệu bị cắt
     end
     API->>R: chấm từng bản ghi theo phiên bản ngưỡng TẠI THỜI ĐIỂM ĐO
     alt thiếu phiên bản ngưỡng hiệu lực
@@ -98,7 +98,7 @@ bỏ qua.
 |---|---|---|
 | Vai gọi vào không phải QA / HACCP | Từ chối trước khi chạm dữ liệu, màn hiện `M_04` | 403 |
 | Không đọc được bản ghi, hoặc mốc thời gian của bản ghi mới nhất không hợp lệ | Ghi log, dừng xử lý, màn hiện `M_05` | 500 |
-| Cửa sổ chạm trần số bản ghi một lần đọc | Dừng xử lý, **không** đánh giá trên dữ liệu đã bị cắt | 422 |
+| Cửa sổ chạm trần số bản ghi một lần đọc | Dừng xử lý, **không** đánh giá trên dữ liệu đã bị cắt, màn hiện `M_77` | 422 |
 
 **Detail**
 
@@ -107,7 +107,7 @@ bỏ qua.
 | 1 | Lấy `event_time` lớn nhất đang có trong `temperature_readings` làm **mốc cuối** cửa sổ, **mốc đầu = mốc cuối − 24 giờ**. Không lấy đồng hồ máy chủ: cùng một tập dữ liệu phải cho cùng kết quả ở mọi lần chạy. Logger chạy đều thì mốc cuối trùng thời điểm bấm, đúng như SC4-05 mục `6bis` diễn đạt |
 | 2 | Chưa có bản ghi nào → trả kết quả rỗng, không sinh cảnh báo. Đây **không** phải lỗi |
 | 3 | Đọc bản ghi có `event_time` trong cửa sổ, **lấy cả hai đầu**, sắp tăng dần, giới hạn **1000 dòng** |
-| 4 | Đọc về đủ 1000 dòng → dừng với `422`: ở mức trần không phân biệt được "đúng 1000 bản ghi" với "đã bị cắt bớt", mà chấm thiếu thì bỏ sót cả một đợt vượt ngưỡng |
+| 4 | Đọc về đủ 1000 dòng → dừng với `422` kèm `M_77`: ở mức trần không phân biệt được "đúng 1000 bản ghi" với "đã bị cắt bớt", mà chấm thiếu thì bỏ sót cả một đợt vượt ngưỡng. Dùng `M_77` chứ **không** dùng `M_76`: đây là lỗi của *dữ liệu đầu vào quá dày*, việc cần làm là thu hẹp khoảng thời gian, không phải đi báo quản trị hệ thống |
 | 5 | Đọc kèm trong cùng nhịp: toàn bộ `temp_policies`, các `lots` có `status` khác `scrapped`, và `locations` để tra khu. Mọi thao tác chạy bằng **phiên người dùng** nên RLS vẫn là lớp chặn thật |
 
 ### 4.2. Chấm bản ghi theo phiên bản ngưỡng, gom đợt, chọn lô bị ảnh hưởng
