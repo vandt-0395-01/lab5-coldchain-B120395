@@ -1,6 +1,6 @@
 # LAB 5 — Backlog và báo cáo tiến độ (Product B, kho lạnh 3 dải nhiệt)
 
-Mã học viên: `<CHỜ ĐIỀN>` · Đề: **Product B** — 食品コールドチェーン業務支援システム, Công ty CP Logistics Lạnh Yuki
+Mã học viên: `B120395` · Đề: **Product B** — 食品コールドチェーン業務支援システム, Công ty CP Logistics Lạnh Yuki
 
 ## Tổng quan
 
