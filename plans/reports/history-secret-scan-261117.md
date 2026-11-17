@@ -23,12 +23,16 @@ gh[pousr]_[A-Za-z0-9]{20,}
 sk-[A-Za-z0-9]{20,}
 eyJ[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,}
 (postgres|mysql|mongodb)(\+srv)?://[^ :]+:[^ @]+@
-ColdChain!
+<mật khẩu tài khoản thử của LAB-2 — giá trị cố ý không ghi ở đây>
 ```
 
-Mẫu cuối (`ColdChain!`) là mẫu riêng cho bài này, không phải mẫu phổ thông: repo LAB-2 có mật khẩu
-tài khoản thử trong `docs/quick-report.md`, và repo LAB-5 có chép `specs/` từ LAB-2 sang. Phải kiểm
-riêng xem mật khẩu đó có theo sang không. **Không theo sang.**
+Mẫu cuối là mẫu riêng cho bài này, không phải mẫu phổ thông: repo LAB-2 có mật khẩu tài khoản thử
+trong `docs/quick-report.md`, và repo LAB-5 có chép `specs/` từ LAB-2 sang. Phải kiểm riêng xem mật
+khẩu đó có theo sang không. **Không theo sang.**
+
+Repo này public nên **giá trị mật khẩu không được viết ra ở đây**, kể cả một phần của nó, kể cả trong
+tài liệu kiểm tra. Ai cần chạy lại kiểm này thì lấy chuỗi từ `docs/quick-report.md` của repo LAB-2
+(private) rồi tự thay vào.
 
 ## Kết luận
 
